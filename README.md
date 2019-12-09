@@ -1,2 +1,5 @@
-# Odoo_Pycharm_Live_Templates
- Odoo 代码版断
+# Odoo Pycharm Live Templates 
+代码版断
+ 
+方法：下载后压缩成 settings.zip 格式导入
+
