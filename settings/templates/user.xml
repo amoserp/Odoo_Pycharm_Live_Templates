@@ -1,0 +1,3 @@
+<templateSet group="user">
+  <template name="pg_path" value=";pg_path= /Library/PostgreSQL/10/bin" description="pg_path= /Library/PostgreSQL/10/bin" toReformat="false" toShortenFQNames="true" />
+</templateSet>

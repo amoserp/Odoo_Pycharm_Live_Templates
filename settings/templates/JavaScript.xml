@@ -1,0 +1,7 @@
+<templateSet group="JavaScript">
+  <template name="odoo_js_option_api/option" value="        $(oe_website_ask).on('change', &quot;select[name='area_id']&quot;, function () {&#10;            var $select = $(&quot;select[name='area_id']&quot;);&#10;            var data = new FormData();&#10;            var xhr = new XMLHttpRequest();&#10;            data.append('model', 'res.country.state.area.subdivide');&#10;            data.append('domain', &quot;[('country_id', '=', &quot;+$select.val()+&quot;)]&quot;);&#10;            data.append('field', &quot;['id','name']&quot;);&#10;            xhr.open('post', '/api/option', false);&#10;            xhr.send(data);&#10;            var result = xhr.responseText;&#10;            var output = document.getElementById('subdivide_id');&#10;            output.innerHTML = result;&#10;        });" description="触发下拉查询数据" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>

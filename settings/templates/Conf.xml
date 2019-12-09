@@ -1,0 +1,886 @@
+<templateSet group="Conf">
+  <template name="conf pg_path" value="pg_path= /Library/PostgreSQL/12/bin" description="pg_path= /Library/PostgreSQL/10/bin" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="conf updata" value="-d amoserp3 -u Amos_V11" description="更指定库 模块" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="conf addons_path" value="addons_path =odoo/addons,../Amos/Amos_Odoo11_release&#10;" description="addons_path =odoo/addons" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="conf log_level" value="log_level = debug_sql" description="输出sql日志" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="conf logfile" value="logfile = odoo-server.log" description="输出sql日志 文件名称" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="conf xmlrpc_port" value="xmlrpc_port = 9088" description="修改对外接口" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="attrs invisible" value="attrs=&quot;{'invisible': [('id', '=', False)]}&quot;" description="attrs=&quot;{'invisible': [('id', '=', False)]}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="attrs many2many" value="attrs=&quot;{'invisible': [('category_id', '=', [[6, False, []]])]}&quot;." description="Many2many的字段在js中获取的值的格式为[[6,false,[]]]" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="attrs required readonly invisible" value="attrs=&quot;{'required': [('ttype','in',['many2one','one2many','many2many'])],'readonly': [('ttype','not in',['many2one','one2many','many2many'])],'invisible': [('ttype','not in',['many2one','one2many','many2many'])]}&quot;" description="必填，只读，隐藏" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="attrs state readonly" value="attrs=&quot;{'readonly': [('state', 'in', (u'处理中',u'已审核'))]}&quot;" description="指定状态下只读 处理中-已审核" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class o_sale_confirm" value="class=&quot;o_sale_confirm&quot;" description="class=&quot;o_sale_confirm&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class oe_edit_only" value="class=&quot;oe_edit_only&quot;" description="编辑下显示class=&quot;oe_edit_only&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class oe_inline" value="class=&quot;oe_inline&quot;" description="class=&quot;oe_inline&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class oe_save_only" value="class=&quot;oe_save_only&quot;" description="编辑下不显示class=&quot;oe_save_only&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class oe_structure" value="class=&quot;oe_structure&quot;" description="class=&quot;oe_structure&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="class row" value="class=&quot;row&quot;" description="class=&quot;row&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="colspan" value="colspan=&quot;2&quot;" description="colspan=&quot;2&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="context" value="context=&quot;{'default_product_id':product_id,'partner_id':parent.partner_id,'company_id': parent.company_id}&quot;" description="context=&quot;{'product_id':product_id}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration bf" value="decoration-bf=&quot;message_needaction==True&quot;" description="列表颜色 粗体颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration danger" value="decoration-danger=&quot;state not in ('cancel', 'done') and scheduled_date &amp;lt; current_date&quot;" description="列表颜色 危险颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration info" value="decoration-info=&quot;state == 'draft'&quot;" description="列表颜色 基本颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration it" value="decoration-it=&quot;state == 'cancel'&quot;" description="列表颜色 其它颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration muted" value="decoration-muted=&quot;state == 'cancel'&quot;" description="列表颜色 减弱的" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration primary" value="decoration-muted=&quot;state == 'cancel'&quot;" description="列表颜色 基本颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration success" value="decoration-success=&quot;product_qty==qty_done&quot;" description="列表颜色 成功颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="decoration warning" value="decoration-warning=&quot;state=='draft'&quot;" description="列表颜色 警告颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="default_focus 1" value="default_focus=&quot;1&quot;" description="新打开窗口光标位置" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="digits" value="digits=&quot;[42,5]&quot;" description="直接格式化浮点字段 digits=&quot;[42,5]&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="domain xml" value="domain =&quot;[('id', '!=', product_id)]&quot;" description="domain =&quot;[('id', '!=', product_id)]&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="form position inside" value="position=&quot;inside&quot;" description="对象中插入" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="group_erp_manager" value="groups=&quot;base.group_erp_manager&quot;" description="ERP管理员groups=&quot;base.group_erp_manager&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+    </context>
+  </template>
+  <template name="group_no_one" value="groups=&quot;base.group_no_one&quot;" description="ERP员工groups=&quot;base.group_no_one&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="group_system" value="groups=&quot;base.group_system&quot;" description="ERP系统管理员groups=&quot;base.group_system&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="groups" value="groups=&quot;Amos_Base.light&quot;" description="groups=&quot;Amos_Base.light&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="groups group_no_one" value="groups=&quot;base.group_no_one&quot;" description="groups=&quot;base.group_no_one&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="groups multi_company" value="groups=&quot;base.group_multi_company&quot;" description="groups=&quot;base.group_multi_company&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="invisible" value="invisible=&quot;1&quot;" description="invisible=&quot;1&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="menuitem web_icon icon" value="web_icon=&quot;sale,static/description/icon.png&quot;" description="菜单图标" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="no_create" value="options=&quot;{'no_create': True}&quot;&#10;" description="options=&quot;{'no_create': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="no_create_edit" value="options=&quot;{'no_create_edit': True}&quot;" description="options=&quot;{'no_create_edit': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="no_open" value="options=&quot;{'no_open': True}&quot;" description="options=&quot;{'no_open': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="nolabel" value="nolabel='1'" description="nolabel='1' 字段隐藏标题" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="noupdate" value="noupdate=&quot;1&quot;" description="noupdate=&quot;1&quot; 视图不更新" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="options" value="options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;" description="下拉菜单属性 不显示创建与编辑，不显示对象链接" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="options horizontal" value="options=&quot;{'horizontal': true}&quot;" description="水平显示" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="parent" value="parent=&quot;sale.prod_config_main&quot;" description="关联上级 parent=&quot;&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="password True" value="password=&quot;True&quot;" description="密码星号显示 password=&quot;True&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="placeholder" value="placeholder=&quot;暂无备注信息&quot;" description="placeholder=&quot;暂无备注信息&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="readonly" value="readonly='1'" description="readonly='1'" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="required" value="required='1'" description="required='1'  视图不更新" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="select 1" value="select=&quot;1&quot;" description="默认搜索(定义的name),select=‘2’高级搜索 select=&quot;1&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="string" value="string=&quot;制单人&quot;" description="string=&quot;制单人&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tem" value="111$camelCase$&#10;222$capitalize$&#10;333$capitalizeAndUnderscore$&#10;444$clipboard$&#10;555$clipboard$&#10;666$collectionElementName$&#10;777$clipboard$&#10;888$completeSmart$&#10;999$concat$&#10;aaa$date$&#10;bbb$decapitalize$&#10;ccc$enum$&#10;ddd$escapeString$&#10;eee$fileName$&#10;fff$fileNameWithoutExtension$&#10;ggg$firstWord$&#10;hhh$groovyScript$&#10;iii$lineNumber$&#10;jjj$lowercaseAndDash$&#10;lll$pyFunctionName$&#10;nnn$snakeCase$&#10;ooo$spaceSeparated$&#10;ppp$time$&#10;qqq$underscoresToCamelCase$&#10;rrr$underscoresToSpaces$&#10;sss$underscoresToSpaces$&#10;ttt$user$&#10;" description="变量模板" toReformat="false" toShortenFQNames="false">
+    <variable name="camelCase" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="capitalize" expression="capitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="capitalizeAndUnderscore" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <variable name="collectionElementName" expression="collectionElementName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="completeSmart" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="concat" expression="concat(expressions...)" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="decapitalize" expression="decapitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="enum" expression="enum(...)" defaultValue="" alwaysStopAt="true" />
+    <variable name="escapeString" expression="escapeString(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="fileName" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="fileNameWithoutExtension" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="firstWord" expression="firstWord(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="groovyScript" expression="groovyScript(&quot;groovy code&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="lineNumber" expression="lineNumber()" defaultValue="" alwaysStopAt="true" />
+    <variable name="lowercaseAndDash" expression="lowercaseAndDash(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="pyFunctionName" expression="pyFunctionName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="snakeCase" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="spaceSeparated" expression="spaceSeparated(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="underscoresToCamelCase" expression="underscoresToCamelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="underscoresToSpaces" expression="underscoresToSpaces(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree create" value="create=&quot;false&quot;" description="列表隐藏创建" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree decoration message" value="decoration-bf=&quot;message_needaction==True&quot;" description="列表属性消息数量" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree delete" value="delete=&quot;false&quot;" description="列表隐藏删除" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree edit" value="edit=&quot;false&quot;" description="列表隐藏编辑" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree editable bottom" value="editable=&quot;bottom&quot;" description="editable=&quot;bottom&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree editable top" value="editable=&quot;top&quot;" description="editable=&quot;TOP&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree order" value="default_order=&quot;date_order desc&quot;" description="列表排序" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="web_icon" value="web_icon=&quot;sale,static/description/icon.png&quot;" description="web_icon=&quot;sale,static/description/icon.png&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget ace" value="widget=&quot;ace&quot;" description="widget=&quot;ace&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget attachment_image" value="widget=&quot;attachment_image&quot;" description="widget=&quot;attachment_image&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget barcode_handler" value="widget=&quot;barcode_handler&quot;" description="widget=&quot;barcode_handler&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget boolean_button" value="widget=&quot;boolean_button&quot;" description="widget=&quot;boolean_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget char_domain" value="widget=&quot;char_domain&quot;" description="widget=&quot;char_domain&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget checkbox" value="widget=&quot;checkbox&quot;" description="widget=&quot;checkbox&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget color" value="widget=&quot;color&quot;" description="widget=&quot;color&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget dashboard_graph" value="widget=&quot;dashboard_graph&quot;" description="widget=&quot;dashboard_graph&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget date" value="widget=&quot;date&quot;" description="widget=&quot;date&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget dummy" value="widget=&quot;dummy&quot;" description="widget=&quot;dummy&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget email" value="widget=&quot;email&quot;" description="widget=&quot;email&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget float_time" value="widget=&quot;float_time&quot;" description="widget=&quot;float_time&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget gauge" value="widget=&quot;gauge&quot;" description="widget=&quot;gauge&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget handle" value="widget=&quot;handle&quot;" description="widget=&quot;handle&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget hr_attendance_form_presence_indicator" value="widget=&quot;hr_attendance_form_presence_indicator&quot;" description="widget=&quot;hr_attendance_form_presence_indicator&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget html" value="widget=&quot;html&quot;" description="widget=&quot;html&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget html_frame" value="widget=&quot;html_frame&quot;" description="widget=&quot;html_frame&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget image" value="widget=&quot;image&quot;" description="widget=&quot;image&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget integer" value="widget=&quot;integer&quot;" description="widget=&quot;integer&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget kanban_label_selection" value="widget=&quot;kanban_label_selection&quot;" description="widget=&quot;kanban_label_selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget kanban_state_selection" value="widget=&quot;kanban_state_selection&quot;" description="widget=&quot;kanban_state_selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget mail_followers" value="widget=&quot;mail_followers&quot;" description="widget=&quot;mail_followers&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget mail_thread" value="widget=&quot;mail_thread&quot;" description="widget=&quot;mail_thread&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many" value="widget=&quot;many2many&quot;" description="widget=&quot;many2many&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_binary" value="widget=&quot;many2many_binary&quot;" description="widget=&quot;many2many_binary&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_checkboxes" value="widget=&quot;many2many_checkboxes&quot;" description="widget=&quot;many2many_checkboxes&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_kanban" value="widget=&quot;many2many_kanban&quot;" description="widget=&quot;many2many_kanban&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_tags" value="widget=&quot;many2many_tags&quot;" description="widget=&quot;many2many_tags&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_tags_email" value="widget=&quot;many2many_tags_email&quot;" description="widget=&quot;many2many_tags_email&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget many2manyattendee" value="widget=&quot;many2manyattendee&quot;" description="widget=&quot;many2manyattendee&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget monetary" value="widget=&quot;monetary&quot;" description="widget=&quot;monetary&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget mrp_time_counter" value="widget=&quot;mrp_time_counter&quot;" description="widget=&quot;mrp_time_counter&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget one2many" value="widget=&quot;one2many&quot;" description="widget=&quot;one2many&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget one2many_list" value="widget=&quot;one2many_list&quot;" description="widget=&quot;one2many_list&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget pad" value="widget=&quot;pad&quot;" description="widget=&quot;pad&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget payment" value="widget=&quot;payment&quot;" description="widget=&quot;payment&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget pdf_viewer" value="widget=&quot;pdf_viewer&quot;" description="widget=&quot;pdf_viewer&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget percentpie" value="widget=&quot;percentpie&quot;" description="widget=&quot;percentpie&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget phone" value="widget=&quot;phone&quot;" description="widget=&quot;phone&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget priority" value="widget=&quot;priority&quot;" description="widget=&quot;priority&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget progressbar" value="widget=&quot;progressbar&quot;" description="widget=&quot;progressbar&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget radio" value="widget=&quot;radio&quot;" description="widget=&quot;radio&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget reference" value="widget=&quot;reference&quot;" description="widget=&quot;reference&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget selection" value="widget=&quot;selection&quot;" description="widget=&quot;selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget statinfo" value="widget=&quot;statinfo&quot;" description="widget=&quot;statinfo&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget statusbar" value="widget=&quot;statusbar&quot;" description="widget=&quot;statusbar&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget timezone_mismatch" value="widget=&quot;timezone_mismatch&quot;" description="widget=&quot;timezone_mismatch&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget toggle_button" value="widget=&quot;toggle_button&quot;" description="widget=&quot;toggle_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget upgrade_boolean" value="widget=&quot;upgrade_boolean&quot;" description="widget=&quot;upgrade_boolean&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget upgrade_radio" value="widget=&quot;upgrade_radio&quot;" description="widget=&quot;upgrade_radio&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget url" value="widget=&quot;url&quot;" description="widget=&quot;url&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget website_button" value="widget=&quot;website_button&quot;" description="widget=&quot;website_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget widgetonbutton" value="widget=&quot;widgetonbutton&quot;" description="widget=&quot;widgetonbutton&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="conf data_dir" value="data_dir = ../data_dir" description="附件与缓存" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="csv read write create unlink" value="access_$clipboard$_user,$clipboard$,model_$clipboard$,base.group_user,1,1,1,1" description="base.group_user,1,1,1,1" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="csv read write create" value="access_$clipboard$_user,$clipboard$,model_$clipboard$,base.group_user,1,1,1,0" description="base.group_user,1,1,1,0" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="csv read write" value="access_$clipboard$_user,$clipboard$,model_$clipboard$,base.group_user,1,1,0,0" description="base.group_user,1,1,0,0" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="csv read" value="access_$clipboard$_user,$clipboard$,model_$clipboard$,base.group_user,1,0,0,0" description="base.group_user,1,0,0,0" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="groups v" value="groups=&quot;hi_contract.$clipboard$&quot;" description="视图添加权限-剪贴板" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tree optional" value="optional=&quot;show&quot;" description="列表字段可选隐藏" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+    </context>
+  </template>
+  <template name="csv read read" value="access_$clipboard$_read,$clipboard$,model_$clipboard$,base.group_user,1,0,0,0" description="base.group_user,1,0,0,0" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="context tree_view_ref form_view_ref" value="context=&quot;{'tree_view_ref':'product.product_packaging_tree_view2', 'form_view_ref':'product.product_packaging_form_view2'}&quot;" description="many2one 视图重定义" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>

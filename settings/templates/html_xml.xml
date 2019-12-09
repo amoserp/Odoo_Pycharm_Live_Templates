@@ -1,0 +1,1855 @@
+<templateSet group="html/xml">
+  <template name="menuitem" value="&lt;menuitem id=&quot;menu_2&quot; name=&quot;销售&quot; sequence=&quot;12&quot;/&gt;&#10;&lt;menuitem id=&quot;menu_2_0&quot; name=&quot;CRM&quot; sequence=&quot;1&quot; parent=&quot;menu_2&quot;/&gt;&#10;&lt;menuitem id=&quot;menu_2_1&quot; name=&quot;销售&quot; sequence=&quot;2&quot; parent=&quot;menu_2&quot;/&gt;&#10;&lt;menuitem id=&quot;menu_2_99&quot; name=&quot;常用报表&quot; sequence=&quot;99&quot; parent=&quot;menu_2&quot;/&gt;&#10;&lt;menuitem id=&quot;menu_2_100&quot; name=&quot;设置&quot; sequence=&quot;100&quot; parent=&quot;menu_2&quot;/&gt;&#10;" description="上下级菜单" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ir sequence" value="&lt;record id=&quot;seq_$fileNameWithoutExtension$&quot; model=&quot;ir.sequence&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$clipboard$&lt;/field&gt;&#10;    &lt;field name=&quot;code&quot;&gt;$clipboard$&lt;/field&gt;&#10;    &lt;field name=&quot;prefix&quot;&gt;OUT%(year)s%(month)s%(day)s&lt;/field&gt;&#10;    &lt;field name=&quot;padding&quot;&gt;5&lt;/field&gt;&#10;    &lt;field name=&quot;company_id&quot; eval=&quot;False&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;" description="自动编号" toReformat="false" toShortenFQNames="false">
+    <variable name="fileNameWithoutExtension" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="noupdate" value="noupdate=&quot;1&quot;" description="noupdate=&quot;1&quot; 视图不更新" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="required" value="required='1'" description="required='1'  视图不更新" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="nolabel" value="nolabel='1'" description="nolabel='1' 字段隐藏标题" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group group" value="&lt;group&gt;&#10;    &lt;group&gt;&#10;        &lt;field name='name' required='1'/&gt;&#10;    &lt;/group&gt;&#10;    &lt;group&gt;&#10;        &lt;field name='type' required='1'/&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="group 组" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="options" value="options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;" description="下拉菜单属性 不显示创建与编辑，不显示对象链接" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="button object" value="&lt;button name='button_loading' states='草稿' string='提交草稿' type='object'&#10;                            class='oe_highlight'/&gt;" description="按钮" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="readonly" value="readonly='1'" description="readonly='1'" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form separator" value="&lt;separator string=&quot;库位信息&quot; colspan=&quot;2&quot;/&gt;" description="分隔符" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="placeholder" value="placeholder=&quot;暂无备注信息&quot;" description="placeholder=&quot;暂无备注信息&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="string" value="string=&quot;制单人&quot;" description="string=&quot;制单人&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree editable top" value="editable=&quot;top&quot;" description="editable=&quot;TOP&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget handle" value="widget=&quot;handle&quot;" description="widget=&quot;handle&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree editable bottom" value="editable=&quot;bottom&quot;" description="editable=&quot;bottom&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="invisible" value="invisible=&quot;1&quot;" description="invisible=&quot;1&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="colspan" value="colspan=&quot;2&quot;" description="colspan=&quot;2&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="attrs invisible" value="attrs=&quot;{'invisible': [('id', '=', False)]}&quot;" description="attrs=&quot;{'invisible': [('id', '=', False)]}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="context" value="context=&quot;{'default_product_id':product_id,'partner_id':parent.partner_id,'company_id': parent.company_id}&quot;" description="context=&quot;{'product_id':product_id}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="groups" value="groups=&quot;Amos_Base.light&quot;" description="groups=&quot;Amos_Base.light&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="message oe_chatter" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;                        &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;                        &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="社交" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="groups multi_company" value="groups=&quot;base.group_multi_company&quot;" description="groups=&quot;base.group_multi_company&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search" value="&lt;record id=&quot;view_search_sale_order&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;sale.order.search&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;sale.order&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;search string=&quot;查询&quot;&gt;&#10;            &lt;field name=&quot;name&quot; string=&quot;单据&quot;&#10;                   filter_domain=&quot;['|','|',('name','ilike',self),('partner_id','ilike',self),('client_order_ref','ilike',self)]&quot;/&gt;&#10;            &lt;field name=&quot;partner_id&quot; operator=&quot;child_of&quot;/&gt;&#10;            &lt;field name=&quot;user_id&quot;/&gt;&#10;            &lt;filter string=&quot;今天&quot; name=&quot;today&quot;&#10;                    domain=&quot;[('date_order', '&amp;gt;=', time.strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', time.strftime('%Y-%m-%d 23:59:59'))]&quot;&#10;            /&gt;&#10;            &lt;filter string=&quot;本月&quot; name=&quot;month&quot;&#10;                    domain=&quot;[('date_order','&amp;lt;=', time.strftime('%Y-%m-%d')),('date_order','&amp;gt;=',time.strftime('%Y-%m-01'))]&quot;&#10;            /&gt;&#10;            &lt;filter string=&quot;本年&quot; name=&quot;year&quot;&#10;                    domain=&quot;[('date_order','&amp;lt;=', time.strftime('%%Y-12-31')),('date_order','&amp;gt;=',time.strftime('%%Y-01-01'))]&quot;&#10;            /&gt;&#10;            &lt;filter string=&quot;我的单据&quot; domain=&quot;[('user_id','=',uid)]&quot; name=&quot;my_orders_filter&quot;/&gt;&#10;            &lt;filter string=&quot;需要我审核的单据&quot; domain=&quot;[('write_id','=',uid)]&quot; name=&quot;my_write_id_filter&quot;/&gt;&#10;            &lt;filter string=&quot;未读消息&quot; name=&quot;message_needaction&quot; domain=&quot;[('message_needaction','=',True)]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;未审核&quot; name='state1' domain=&quot;[('state','=','草稿')]&quot;/&gt;&#10;            &lt;filter string=&quot;处理中&quot; name='state2' domain=&quot;[('state','=','处理中')]&quot;/&gt;&#10;            &lt;filter string=&quot;已审核&quot; name='state3' domain=&quot;[('state','=','已审核')]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;是否样品&quot; name='is_sample' domain=&quot;[('is_sample','=',True)]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;group expand=&quot;0&quot; string=&quot;分组&quot;&gt;&#10;                &lt;filter string=&quot;是否样品&quot; name='is_sample' domain=&quot;[]&quot; context=&quot;{'group_by':'is_sample'}&quot;/&gt;&#10;                &lt;filter string=&quot;审核人&quot; name='write_id' domain=&quot;[]&quot; context=&quot;{'group_by':'write_id'}&quot;/&gt;&#10;                &lt;filter string=&quot;业务员&quot; name ='user_id' domain=&quot;[]&quot; context=&quot;{'group_by':'user_id'}&quot;/&gt;&#10;                &lt;filter string=&quot;客户&quot; name='partner_id' domain=&quot;[]&quot; context=&quot;{'group_by':'partner_id'}&quot;/&gt;&#10;                &lt;filter string=&quot;月单据&quot; name='date_order' domain=&quot;[]&quot; context=&quot;{'group_by':'date_order'}&quot;/&gt;&#10;                &lt;filter string=&quot;单据状态&quot; name='state' domain=&quot;[]&quot; context=&quot;{'group_by':'state'}&quot;/&gt;&#10;                &lt;filter string=&quot;公司&quot; name='company_id' domain=&quot;[]&quot; context=&quot;{'group_by':'company_id'}&quot;/&gt;&#10;            &lt;/group&gt;&#10;        &lt;/search&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="查询完整视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="calendar" value="&lt;record id=&quot;odoo_calendar_sale_order&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;sale.order.calendar&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;sale.order&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;calendar string=&quot;销售日历&quot; color=&quot;state&quot; date_start=&quot;date_order&quot;&gt;&#10;            &lt;field name=&quot;partner_id&quot;/&gt;&#10;            &lt;field name=&quot;amount&quot; widget=&quot;monetary&quot;/&gt;&#10;        &lt;/calendar&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="完整日历视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="position after" value="&lt;xpath expr=&quot;//field[@name='warranty']&quot; position=&quot;after&quot;&gt;&#10;       &lt;field name=&quot;color_id&quot; readonly='1'/&gt;&#10;&lt;/xpath&gt;" description="position=&quot;after&quot; 之后" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="position before" value="&lt;xpath expr=&quot;//field[@name='warranty']&quot; position=&quot;before&quot;&gt;&#10;       &lt;field name=&quot;color_id&quot; readonly='1'/&gt;&#10;&lt;/xpath&gt;" description="position=&quot;before&quot; 之前" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget ace" value="widget=&quot;ace&quot;" description="widget=&quot;ace&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget attachment_image" value="widget=&quot;attachment_image&quot;" description="widget=&quot;attachment_image&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget boolean_button" value="widget=&quot;boolean_button&quot;" description="widget=&quot;boolean_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget barcode_handler" value="widget=&quot;barcode_handler&quot;" description="widget=&quot;barcode_handler&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget char_domain" value="widget=&quot;char_domain&quot;" description="widget=&quot;char_domain&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget dummy" value="widget=&quot;dummy&quot;" description="widget=&quot;dummy&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget checkbox" value="widget=&quot;checkbox&quot;" description="widget=&quot;checkbox&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget dashboard_graph" value="widget=&quot;dashboard_graph&quot;" description="widget=&quot;dashboard_graph&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget date" value="widget=&quot;date&quot;" description="widget=&quot;date&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget email" value="widget=&quot;email&quot;" description="widget=&quot;email&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget float_time" value="widget=&quot;float_time&quot;" description="widget=&quot;float_time&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget gauge" value="widget=&quot;gauge&quot;" description="widget=&quot;gauge&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget html" value="widget=&quot;html&quot;" description="widget=&quot;html&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget hr_attendance_form_presence_indicator" value="widget=&quot;hr_attendance_form_presence_indicator&quot;" description="widget=&quot;hr_attendance_form_presence_indicator&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget html_frame" value="widget=&quot;html_frame&quot;" description="widget=&quot;html_frame&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget integer" value="widget=&quot;integer&quot;" description="widget=&quot;integer&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget image" value="widget=&quot;image&quot;" description="widget=&quot;image&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget kanban_state_selection" value="widget=&quot;kanban_state_selection&quot;" description="widget=&quot;kanban_state_selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget kanban_label_selection" value="widget=&quot;kanban_label_selection&quot;" description="widget=&quot;kanban_label_selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many" value="widget=&quot;many2many&quot;" description="widget=&quot;many2many&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_binary" value="widget=&quot;many2many_binary&quot;" description="widget=&quot;many2many_binary&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_tags_email" value="widget=&quot;many2many_tags_email&quot;" description="widget=&quot;many2many_tags_email&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_tags" value="widget=&quot;many2many_tags&quot;" description="widget=&quot;many2many_tags&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_checkboxes" value="widget=&quot;many2many_checkboxes&quot;" description="widget=&quot;many2many_checkboxes&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2manyattendee" value="widget=&quot;many2manyattendee&quot;" description="widget=&quot;many2manyattendee&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget many2many_kanban" value="widget=&quot;many2many_kanban&quot;" description="widget=&quot;many2many_kanban&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget mail_followers" value="widget=&quot;mail_followers&quot;" description="widget=&quot;mail_followers&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget mail_thread" value="widget=&quot;mail_thread&quot;" description="widget=&quot;mail_thread&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget monetary" value="widget=&quot;monetary&quot;" description="widget=&quot;monetary&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget mrp_time_counter" value="widget=&quot;mrp_time_counter&quot;" description="widget=&quot;mrp_time_counter&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget one2many" value="widget=&quot;one2many&quot;" description="widget=&quot;one2many&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget one2many_list" value="widget=&quot;one2many_list&quot;" description="widget=&quot;one2many_list&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget phone" value="widget=&quot;phone&quot;" description="widget=&quot;phone&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget priority" value="widget=&quot;priority&quot;" description="widget=&quot;priority&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget payment" value="widget=&quot;payment&quot;" description="widget=&quot;payment&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget progressbar" value="widget=&quot;progressbar&quot;" description="widget=&quot;progressbar&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget percentpie" value="widget=&quot;percentpie&quot;" description="widget=&quot;percentpie&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget pad" value="widget=&quot;pad&quot;" description="widget=&quot;pad&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget pdf_viewer" value="widget=&quot;pdf_viewer&quot;" description="widget=&quot;pdf_viewer&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget radio" value="widget=&quot;radio&quot;" description="widget=&quot;radio&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget reference" value="widget=&quot;reference&quot;" description="widget=&quot;reference&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget statinfo" value="widget=&quot;statinfo&quot;" description="widget=&quot;statinfo&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget selection" value="widget=&quot;selection&quot;" description="widget=&quot;selection&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget statusbar" value="widget=&quot;statusbar&quot;" description="widget=&quot;statusbar&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget toggle_button" value="widget=&quot;toggle_button&quot;" description="widget=&quot;toggle_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget timezone_mismatch" value="widget=&quot;timezone_mismatch&quot;" description="widget=&quot;timezone_mismatch&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget upgrade_boolean" value="widget=&quot;upgrade_boolean&quot;" description="widget=&quot;upgrade_boolean&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget upgrade_radio" value="widget=&quot;upgrade_radio&quot;" description="widget=&quot;upgrade_radio&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget url" value="widget=&quot;url&quot;" description="widget=&quot;url&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget widgetonbutton" value="widget=&quot;widgetonbutton&quot;" description="widget=&quot;widgetonbutton&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget website_button" value="widget=&quot;website_button&quot;" description="widget=&quot;website_button&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xml odoo" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;        &#10;        &lt;record id=&quot;odoo_form_$fileNameWithoutExtension$&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$clipboard$.form&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;$clipboard$&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;form string=&quot;表单&quot;&gt;&#10;                    &lt;sheet&gt;&#10;                        &lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;                        &#10;                        &lt;/div&gt;&#10;                        &lt;group&gt;&#10;                            &lt;group&gt;&#10;                                &lt;field name=&quot;name&quot;  /&gt;&#10;                                &#10;                            &lt;/group&gt;&#10;                            &lt;group&gt;&#10;                            &lt;/group&gt;&#10;                        &lt;/group&gt;&#10;                    &lt;/sheet&gt;&#10;                &lt;/form&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &#10;        &lt;record id=&quot;odoo_tree_$fileNameWithoutExtension$&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$clipboard$.tree&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;$clipboard$&lt;/field&gt;&#10;            &lt;field name=&quot;priority&quot;&gt;1&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;tree string=&quot;列表&quot;&gt;&#10;                    &lt;field name=&quot;name&quot;  /&gt;&#10;                &lt;/tree&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10; &#10;        &lt;record id=&quot;odoo_action_$fileNameWithoutExtension$&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;$clipboard$.actions&lt;/field&gt;&#10;            &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;            &lt;field name=&quot;res_model&quot;&gt;$clipboard$&lt;/field&gt;&#10;            &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;            &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;            &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;                &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;                    创建单据.&#10;                &lt;/p&gt;&lt;p&gt;&#10;                &lt;/p&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10; &#10;        &lt;menuitem action=&quot;odoo_action_$fileNameWithoutExtension$&quot; id=&quot;menu_$fileNameWithoutExtension$&quot; sequence=&quot;0&quot;/&gt;&#10;        &#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;" description="标准简单视图" toReformat="false" toShortenFQNames="false">
+    <variable name="fileNameWithoutExtension" expression="fileNameWithoutExtension()" defaultValue="amos_tem" alwaysStopAt="true" />
+    <variable name="clipboard" expression="clipboard()" defaultValue="amos.models" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="domain xml" value="domain =&quot;[('id', '!=', product_id)]&quot;" description="domain =&quot;[('id', '!=', product_id)]&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="view inherit" value="&lt;record model=&quot;ir.ui.view&quot; id=&quot;odoo_sale_order_form_inherit&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;sale.order.form.inherit&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;sale.order&lt;/field&gt;&#10;    &lt;field name=&quot;inherit_id&quot; ref=&quot;Amos_Sale.odoo_sale_order_form&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;&#10;        &lt;xpath expr=&quot;//page[@name='page_card']&quot; position=&quot;after&quot;&gt;&#10;            &lt;page string=&quot;发货单&quot;&gt;&#10;                &lt;field name=&quot;stock_ids&quot;&gt;&#10;                    &lt;tree string=&quot;出库单&quot;&gt;&#10;                        &lt;field name=&quot;name&quot;/&gt;&#10;                        &lt;field name=&quot;date_order&quot;/&gt;&#10;                        &lt;field name=&quot;delivery_date&quot;/&gt;&#10;                        &lt;field name=&quot;user_id&quot; string=&quot;业务员&quot;/&gt;&#10;                        &lt;field name=&quot;state&quot;/&gt;&#10;                        &lt;button name=&quot;unlink&quot; type=&quot;object&quot; string=&quot;删除&quot; groups=&quot;Amos_Sale.sale_user&quot;/&gt;&#10;                    &lt;/tree&gt;&#10;                &lt;/field&gt;&#10;            &lt;/page&gt;&#10;        &lt;/xpath&gt;&#10;&#10;        &lt;xpath expr=&quot;//label[@name='placeholder']&quot; position=&quot;after&quot;&gt;&#10;            &lt;button string=&quot;创建出库单&quot; type=&quot;action&quot; name=&quot;%(Amos_Stock_Sale.menu_stock_picking_out_only_one)d&quot;&#10;                    groups=&quot;Amos_Sale.sale_user&quot;&#10;                    attrs=&quot;{'invisible': ['|',('delivery_state','=','全部出库'),('state','!=','已审核')]}&quot;/&gt;&#10;&#10;        &lt;/xpath&gt;&#10;        &lt;xpath expr=&quot;//field[@name='delivery_date']&quot; position=&quot;after&quot;&gt;&#10;            &lt;field name=&quot;delivery_state&quot;/&gt;&#10;        &lt;/xpath&gt;&#10;        &lt;xpath expr='//field[@name=&quot;order_line&quot;]/form/sheet/group/group[@name=&quot;g2&quot;]/field[@name=&quot;name&quot;]' position=&quot;after&quot;&gt;&#10;            &lt;field name=&quot;quantity_out&quot; readonly='1'/&gt;&#10;        &lt;/xpath&gt;&#10;        &lt;xpath expr=&quot;/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='product_uom_qty']&quot;&#10;               position=&quot;after&quot;&gt;&#10;            &lt;field name=&quot;quantity_out&quot; readonly='1'/&gt;&#10;        &lt;/xpath&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="视图继承" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="password True" value="password=&quot;True&quot;" description="密码星号显示 password=&quot;True&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="digits" value="digits=&quot;[42,5]&quot;" description="直接格式化浮点字段 digits=&quot;[42,5]&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="default_focus 1" value="default_focus=&quot;1&quot;" description="新打开窗口光标位置" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="select 1" value="select=&quot;1&quot;" description="默认搜索(定义的name),select=‘2’高级搜索 select=&quot;1&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="position inside" value="&lt;xpath expr=&quot;//group[@name='existing']&quot; position=&quot;inside&quot;&gt;&#10;                    &lt;field name=&quot;existing_purchase_qty&quot;/&gt;&#10;&lt;/xpath&gt;" description="在什么之内" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group 1" value="&lt;group&gt;&lt;/group&gt;" description="1个&lt;group&gt;&lt;/group&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group 3" value="&lt;group&gt;&#10;    &lt;group&gt;&#10;    &lt;/group&gt;&#10;    &lt;group&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="3个&lt;group&gt;&lt;/group&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group 2" value="&lt;group&gt;&#10;    &lt;group&gt;&#10;    &lt;/group&gt;&#10;&lt;/group&gt;" description="2个&lt;group&gt;&lt;/group&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="attrs required readonly invisible" value="attrs=&quot;{'required': [('ttype','in',['many2one','one2many','many2many'])],&#10;                                                    'readonly': [('ttype','not in',['many2one','one2many','many2many'])],&#10;                                                    'invisible': [('ttype','not in',['many2one','one2many','many2many'])]}&quot;" description="必填，只读，隐藏" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form view" value="&lt;record id=&quot;view_form_mail_mall&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;mail.mall.form&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;mail.mall&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;form string=&quot;表单&quot;&gt;&#10;            &lt;sheet&gt;&#10;                &lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;                &lt;/div&gt;&#10;                &lt;group&gt;&#10;                    &lt;group&gt;&#10;                        &lt;field name=&quot;name&quot;/&gt;&#10;                    &lt;/group&gt;&#10;                    &lt;group&gt;&#10;                    &lt;/group&gt;&#10;                &lt;/group&gt;&#10;            &lt;/sheet&gt;&#10;        &lt;/form&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="表单视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree view" value="&lt;record id=&quot;view_tree_mail_mall&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;mail.tree&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;mail&lt;/field&gt;&#10;    &lt;field name=&quot;priority&quot;&gt;1&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;tree string=&quot;列表&quot;&gt;&#10;            &lt;field name=&quot;name&quot;/&gt;&#10;        &lt;/tree&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="列表视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act window" value="&lt;record id=&quot;view_action_mail_mall_odoo&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;电商产品&lt;/field&gt;&#10;    &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;    &lt;field name=&quot;res_model&quot;&gt;mail.mall&lt;/field&gt;&#10;    &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;target&quot;&gt;current&lt;/field&gt;&#10;    &lt;field name=&quot;context&quot;&gt;{}&lt;/field&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;    &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;        &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;            创建电商产品.&#10;        &lt;/p&gt;&#10;        &lt;p&gt;&#10;        &lt;/p&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="窗口事件" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act form tree" value="&#10;&lt;record id=&quot;action_res_partner_customer_view1&quot; model=&quot;ir.actions.act_window.view&quot;&gt;&#10;    &lt;field eval=&quot;10&quot; name=&quot;sequence&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_tree&quot;/&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;odoo_res_partner_customer_act&quot;/&gt;&#10;&lt;/record&gt;&#10;&#10;&lt;record id=&quot;action_res_partner_customer_view2&quot; model=&quot;ir.actions.act_window.view&quot;&gt;&#10;    &lt;field eval=&quot;20&quot; name=&quot;sequence&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_form&quot;/&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;odoo_res_partner_customer_act&quot;/&gt;&#10;&lt;/record&gt;" description="多列表与多视图对应" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act domain" value="&lt;field name=&quot;domain&quot;&gt;[('customer', '=', True)]&lt;/field&gt;" description="窗口过滤&lt;field name=&quot;domain&quot;&gt;[('customer', '=', True)]&lt;/field&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act context" value="&lt;field name=&quot;context&quot;&gt;{&quot;default_customer&quot;:1,&quot;default_supplier&quot;:0}&lt;/field&gt;" description="窗口上下文&lt;field name=&quot;context&quot;&gt;{&quot;default_customer&quot;:1,&quot;default_supplier&quot;:0}&lt;/field&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act view_id" value="&lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_tree&quot;/&gt;" description="窗口上指定视图&lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_tree&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="notebook page" value="&lt;notebook colspan=&quot;4&quot;&gt;&#10;    &lt;page string=&quot;页卡&quot; autofocus=&quot;autofocus&quot;&gt;&#10;    &lt;/page&gt;&#10;&lt;/notebook&gt;" description="页卡" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="position replace" value="&lt;xpath expr=&quot;//field[@name='standard_price']&quot; position=&quot;replace&quot; /&gt;&#10;" description="position=&quot;replace&quot; 移除字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="label div" value="&lt;label string=&quot;出差时间&quot;/&gt;&#10;&lt;div class=&quot;o_row&quot;&gt;&#10;    &lt;label for=&quot;date_start&quot;/&gt;&#10;    &lt;field name=&quot;date_start&quot;/&gt;&#10;    &lt;label for=&quot;date_end&quot;/&gt;&#10;    &lt;field name=&quot;date_end&quot;/&gt;&#10;&lt;/div&gt;&#10;" description="一行显示两个字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="div button_box" value="&lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;&#10;&lt;/div&gt;" description="class=&quot;oe_button_box&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xpath page after" value=" &lt;xpath expr=&quot;//page[@name='page_card']&quot; position=&quot;after&quot;&gt;&#10;    &lt;page string=&quot;发货单&quot;&gt;&#10;        &lt;field name=&quot;stock_ids&quot;&gt;&#10;            &lt;tree string=&quot;出库单&quot;&gt;&#10;                &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;field name=&quot;date_order&quot;/&gt;&#10;                &lt;field name=&quot;delivery_date&quot;/&gt;&#10;                &lt;field name=&quot;user_id&quot; string=&quot;业务员&quot;/&gt;&#10;                &lt;field name=&quot;state&quot;/&gt;&#10;                &lt;button name=&quot;unlink&quot; type=&quot;object&quot; string=&quot;删除&quot; groups=&quot;Amos_Sale.sale_user&quot;/&gt;&#10;            &lt;/tree&gt;&#10;        &lt;/field&gt;&#10;    &lt;/page&gt;&#10;&lt;/xpath&gt;" description="在页卡之后插入页卡" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xpath from tree field after" value="&lt;xpath expr=&quot;/form/sheet/notebook/page/field[@name='order_line']/tree/field[@name='product_uom_qty']&quot; position=&quot;after&quot;&gt;&#10;    &lt;field name=&quot;quantity_out&quot; readonly='1'/&gt;&#10;&lt;/xpath&gt;" description="在列表指定字段后插入字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+    </context>
+  </template>
+  <template name="xpath field" value="&lt;xpath expr=&quot;//field[@name='delivery_date']&quot; position=&quot;after&quot;&gt;&#10;    &lt;field name=&quot;delivery_state&quot;/&gt;&#10;&lt;/xpath&gt;" description="在指定字段后插入字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="inherit_id view" value="&lt;field name=&quot;inherit_id&quot; ref=&quot;Amos_Sale.odoo_sale_order_form&quot;/&gt;" description="继承视图&lt;field name=&quot;inherit_id&quot; ref=&quot;Amos_Sale.odoo_sale_order_form&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ref view" value="&lt;field name=&quot;search_view_id&quot; ref=&quot;view_search_stock_picking_out&quot;/&gt;" description="关联视图&lt;field name=&quot;search_view_id&quot; ref=&quot;view_search_stock_picking_out&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field name" value="&lt;field name=&quot;name&quot; required=&quot;True&quot;/&gt;" description="字段&lt;field name=&quot;name&quot; /&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field company_id" value="&lt;field name=&quot;company_id&quot;  options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;&#10;                                       required='1'&#10;                                       groups=&quot;base.group_multi_company&quot;/&gt;" description="公司字段&lt;field name=&quot;name&quot; /&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree" value="&lt;tree string=&quot;列表&quot;&gt;&#10;    &lt;field name=&quot;name&quot; required=&quot;True&quot;/&gt;&#10;&lt;/tree&gt;" description="tree 列表" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="attrs many2many" value="attrs=&quot;{'invisible': [('category_id', '=', [[6, False, []]])]}&quot;." description="Many2many的字段在js中获取的值的格式为[[6,false,[]]]" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act target current" value="&lt;field name=&quot;target&quot;&gt;current&lt;/field&gt;" description="当前窗口" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act target new" value="&lt;field name=&quot;target&quot;&gt;new&lt;/field&gt;" description="新窗口" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act target inline" value="&lt;field name=&quot;target&quot;&gt;inline&lt;/field&gt;" description="内联编辑" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act target fullscreen" value="&lt;field name=&quot;target&quot;&gt;fullscreen&lt;/field&gt;" description="全屏" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act target main" value="&lt;field name=&quot;target&quot;&gt;main&lt;/field&gt;" description="当前窗口主要动作" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form view amoserp" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;&#10;        &lt;record id=&quot;odoo_view_calendar_sale_order&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;amos.template.calendar&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;amos.template&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;calendar string=&quot;日历&quot; color=&quot;state&quot; date_start=&quot;date_order&quot;&gt;&#10;                    &lt;field name=&quot;partner_id&quot;/&gt;&#10;                    &lt;field name=&quot;amount&quot; widget=&quot;monetary&quot;/&gt;&#10;                &lt;/calendar&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;odoo_view_form_amos_template&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;amos.template.form&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;amos.template&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;form string=&quot;表单&quot;&gt;&#10;                    &lt;header&gt;&#10;                        &lt;label name=&quot;placeholder&quot; string=&quot;占位符&quot; invisible=&quot;1&quot;/&gt;&#10;                        &lt;button name='button_loading' states='草稿' string='提交草稿' type='object'&#10;                                class='oe_highlight'/&gt;&#10;                        &lt;button name=&quot;button_draft&quot; string=&quot;重置为草稿&quot;&#10;                                attrs=&quot;{'invisible': [('state','not in',('处理中'))]}&quot;&#10;                                type=&quot;object&quot;/&gt;&#10;                        &lt;button name=&quot;%(Amos_Base.action_view_work_flows_wizard)d&quot; type=&quot;action&quot; string=&quot;审核&quot;&#10;                                class='oe_highlight'&#10;                                groups=&quot;Amos_Sale.sale_user,Amos_Sale.sale_manager,Amos_Sale.sale_shop_manager&quot;&#10;                                attrs=&quot;{'invisible': ['|',('write_id','=',False),('is_look','=',False)]}&quot;&#10;                                context=&quot;{'wkf': 'object_ok,object_no','type_flows': 'button','message_template': 0}&quot;/&gt;&#10;                        &lt;button name=&quot;%(Amos_Base.actions_add_workflows_wizard)d&quot; type=&quot;action&quot; class='oe_highlight'&#10;                                groups=&quot;Amos_Sale.sale_user,Amos_Sale.sale_manager,Amos_Sale.sale_shop_manager&quot;&#10;                                context=&quot;{'start_state': state,'message_template': 0}&quot;&#10;                                attrs=&quot;{'invisible': ['|',('state','not in',('处理中','已审核')),('write_id','!=',False)]}&quot;&#10;                                string=&quot;派单流转&quot;/&gt;&#10;                        &lt;field name='state' widget='statusbar' statusbar_visible=&quot;草稿,处理中,已审核&quot;/&gt;&#10;                    &lt;/header&gt;&#10;                    &lt;sheet&gt;&#10;                        &lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;                            &lt;field name='manager_state' widget='statusbar' statusbar_visible=&quot;未查阅,已读并确认,已读并拒绝&quot;/&gt;&#10;                        &lt;/div&gt;&#10;                        &lt;group&gt;&#10;                            &lt;group&gt;&#10;                                &lt;field name=&quot;name&quot;/&gt;&#10;                                &lt;field name=&quot;partner_id&quot; domain=&quot;[('customer','=',True)]&quot;&#10;                                       context=&quot;{'search_default_customer':1, 'show_address': 1,'form_view_ref':'Amos_Base.odoo_res_partner_customer_form', 'tree_view_ref':'Amos_Base.odoo_res_partner_customer_tree'}&quot;&#10;                                       options='{&quot;always_reload&quot;: True}'/&gt;&#10;                                &lt;field name=&quot;user_id&quot;&#10;                                       options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;/&gt;&#10;                                &lt;field name=&quot;is_look&quot; invisible=&quot;1&quot;/&gt;&#10;&#10;                            &lt;/group&gt;&#10;                            &lt;group&gt;&#10;                                &lt;field name=&quot;date_order&quot;/&gt;&#10;                                &lt;field name=&quot;delivery_date&quot;/&gt;&#10;                                &lt;field name=&quot;company_id&quot;&#10;                                       options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;&#10;                                       required='1' groups=&quot;base.group_multi_company&quot;/&gt;&#10;                            &lt;/group&gt;&#10;                        &lt;/group&gt;&#10;                        &lt;notebook colspan=&quot;4&quot;&gt;&#10;                            &lt;page string=&quot;页卡&quot; name=&quot;page_card&quot; autofocus=&quot;autofocus&quot;&gt;&#10;                                &lt;field name=&quot;order_line&quot;&#10;                                       context=&quot;{'partner':partner_id}&quot;&gt;&#10;                                    &lt;form string=&quot;产品信息&quot;&gt;&#10;                                        &lt;sheet&gt;&#10;                                            &lt;group&gt;&#10;                                                &lt;group name=&quot;g1&quot;&gt;&#10;                                                    &lt;separator string=&quot;产品信息&quot; colspan=&quot;2&quot;/&gt;&#10;                                                    &lt;field name=&quot;product_id&quot;/&gt;&#10;                                                    &lt;field name=&quot;product_uom_qty&quot;/&gt;&#10;                                                    &lt;field name=&quot;product_uom&quot;/&gt;&#10;                                                    &lt;field name=&quot;price_subtotal&quot;/&gt;&#10;                                                &lt;/group&gt;&#10;&#10;                                                &lt;group name=&quot;g2&quot;&gt;&#10;                                                    &lt;separator string=&quot;其它信息&quot; colspan=&quot;2&quot;/&gt;&#10;                                                    &lt;field name=&quot;name&quot; string=&quot;全称&quot;/&gt;&#10;                                                    &lt;field name=&quot;state&quot; invisible=&quot;1&quot;/&gt;&#10;                                                &lt;/group&gt;&#10;                                            &lt;/group&gt;&#10;                                            &lt;notebook colspan=&quot;4&quot;&gt;&#10;                                                &lt;page string=&quot;备注&quot; name=&quot;form_page&quot;&gt;&#10;                                                    &lt;field name=&quot;note&quot; nolabel=&quot;1&quot;/&gt;&#10;                                                &lt;/page&gt;&#10;                                            &lt;/notebook&gt;&#10;                                        &lt;/sheet&gt;&#10;                                    &lt;/form&gt;&#10;                                    &lt;tree string=&quot;订单明细&quot; editable=&quot;bottom&quot;&gt;&#10;                                        &lt;field name=&quot;id&quot; invisible=&quot;1&quot;/&gt;&#10;                                        &lt;field name=&quot;state&quot; invisible=&quot;1&quot;/&gt;&#10;                                        &lt;field name=&quot;sequence&quot; widget=&quot;handle&quot;/&gt;&#10;                                        &lt;field name=&quot;name&quot; invisible='1'/&gt;&#10;                                        &lt;field name=&quot;product_id&quot;&#10;                                               options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;&#10;                                               required='1'&#10;                                               context=&quot;{'product_id':product_id,'partner_id':parent.partner_id,'company_id': parent.company_id}&quot;/&gt;&#10;                                        &lt;field name=&quot;product_uom&quot; attrs=&quot;{'invisible': [('id', '=', False)]}&quot;/&gt;&#10;                                        &lt;field name=&quot;product_uom_qty&quot; required='1'/&gt;&#10;                                        &lt;field name=&quot;price_unit&quot; required='1'/&gt;&#10;                                        &lt;field name=&quot;price_subtotal&quot;/&gt;&#10;                                        &lt;field name=&quot;note&quot;/&gt;&#10;                                    &lt;/tree&gt;&#10;                                &lt;/field&gt;&#10;                                &lt;field name=&quot;note&quot; placeholder=&quot;暂无备注信息&quot;/&gt;&#10;&#10;                            &lt;/page&gt;&#10;                            &lt;page string=&quot;审批&quot;&gt;&#10;                                &lt;field name=&quot;workflow_ids&quot; readonly='1'/&gt;&#10;                            &lt;/page&gt;&#10;&#10;                            &lt;page string=&quot;消息&quot;&gt;&#10;                                &lt;field name=&quot;sms_message_ids&quot; readonly='1'/&gt;&#10;                            &lt;/page&gt;&#10;                            &lt;page string=&quot;其它&quot;&gt;&#10;&#10;                                &lt;group&gt;&#10;                                    &lt;group name=&quot;other1&quot;&gt;&#10;                                    &lt;/group&gt;&#10;                                    &lt;group name=&quot;other2&quot;&gt;&#10;                                    &lt;/group&gt;&#10;                                &lt;/group&gt;&#10;&#10;                            &lt;/page&gt;&#10;                        &lt;/notebook&gt;&#10;                        &lt;group col=&quot;3&quot;&gt;&#10;                            &lt;group&gt;&#10;                            &lt;/group&gt;&#10;                            &lt;group&gt;&#10;                            &lt;/group&gt;&#10;                            &lt;group&gt;&#10;                                &lt;field name=&quot;amount&quot;/&gt;&#10;                            &lt;/group&gt;&#10;                        &lt;/group&gt;&#10;                        &lt;group&gt;&#10;                            &lt;group string=&quot;制单人&quot;&gt;&#10;                                &lt;field name=&quot;create_uid&quot; readonly=&quot;1&quot; string=&quot;制单人&quot;/&gt;&#10;                                &lt;field name=&quot;create_date&quot; readonly=&quot;1&quot; string=&quot;录单时间&quot;/&gt;&#10;                            &lt;/group&gt;&#10;                            &lt;group string=&quot;审核人&quot;&gt;&#10;                                &lt;field name=&quot;write_id&quot; readonly=&quot;1&quot; string=&quot;审批人&quot;/&gt;&#10;                                &lt;field name=&quot;write_date&quot; readonly=&quot;1&quot; string=&quot;审核日期&quot;/&gt;&#10;                            &lt;/group&gt;&#10;                        &lt;/group&gt;&#10;                        &lt;p&gt;&lt;/p&gt;&#10;                        &lt;h3 class=&quot;oe_grey&quot;&gt;说明&lt;/h3&gt;&#10;                        &lt;ul class=&quot;oe_grey&quot;&gt;&#10;                            &lt;li&gt;明细中不能有相同的产品.&lt;/li&gt;&#10;                        &lt;/ul&gt;&#10;                    &lt;/sheet&gt;&#10;                &lt;/form&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;odoo_view_tree_amos_template&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;amos.template.tree&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;amos.template&lt;/field&gt;&#10;            &lt;field name=&quot;priority&quot;&gt;1&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;tree string=&quot;列表&quot; name=&quot;sale_order_tree&quot; colors=&quot;red:state=='草稿';#009999:state=='处理中';&quot;&#10;                      decoration-bf=&quot;message_needaction==True&quot;&gt;&#10;                    &lt;field name=&quot;message_needaction&quot; invisible=&quot;1&quot;/&gt;&#10;                    &lt;field name=&quot;name&quot; class=&quot;label label-danger&quot;/&gt;&#10;                    &lt;field name=&quot;partner_id&quot;/&gt;&#10;                    &lt;field name=&quot;date_order&quot; widget=&quot;date&quot;/&gt;&#10;                    &lt;field name=&quot;user_id&quot;/&gt;&#10;                    &lt;field name=&quot;manager_state&quot;/&gt;&#10;                    &lt;field name=&quot;write_id&quot;/&gt;&#10;                    &lt;field name=&quot;amount&quot; sum=&quot;合计&quot;/&gt;&#10;                    &lt;field name=&quot;company_id&quot; groups=&quot;base.group_multi_company&quot;/&gt;&#10;                    &lt;field name=&quot;state&quot;/&gt;&#10;                &lt;/tree&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;odoo_view_search_amos_template&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;amos.template.search&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;amos.template&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;search string=&quot;查询&quot;&gt;&#10;                    &lt;field name=&quot;name&quot; string=&quot;单据&quot;&#10;                           filter_domain=&quot;['|','|',('name','ilike',self),('partner_id','ilike',self),('origin','ilike',self)]&quot;/&gt;&#10;                    &lt;field name=&quot;partner_id&quot; operator=&quot;child_of&quot;/&gt;&#10;                    &lt;field name=&quot;user_id&quot;/&gt;&#10;                    &lt;filter string=&quot;今天&quot; name=&quot;today&quot;&#10;                            domain=&quot;[('date_order', '&amp;gt;=', time.strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', time.strftime('%Y-%m-%d 23:59:59'))]&quot;&#10;                    /&gt;&#10;                    &lt;filter string=&quot;本月&quot; name=&quot;month&quot;&#10;                            domain=&quot;[('date_order','&amp;lt;=', time.strftime('%Y-%m-%d')),('date_order','&amp;gt;=',time.strftime('%Y-%m-01'))]&quot;&#10;                    /&gt;&#10;                    &lt;filter string=&quot;本年&quot; name=&quot;year&quot;&#10;                            domain=&quot;[('date_order','&amp;lt;=', time.strftime('%%Y-12-31')),('date_order','&amp;gt;=',time.strftime('%%Y-01-01'))]&quot;&#10;                    /&gt;&#10;                    &lt;filter string=&quot;我的单据&quot; domain=&quot;[('user_id','=',uid)]&quot; name=&quot;my_orders_filter&quot;/&gt;&#10;                    &lt;filter string=&quot;需要我审核的单据&quot; domain=&quot;[('write_id','=',uid)]&quot; name=&quot;my_write_id_filter&quot;/&gt;&#10;                    &lt;filter string=&quot;未读消息&quot; name=&quot;message_needaction&quot; domain=&quot;[('message_needaction','=',True)]&quot;/&gt;&#10;                    &lt;separator/&gt;&#10;                    &lt;filter string=&quot;未审核&quot; domain=&quot;[('state','=','草稿')]&quot;/&gt;&#10;                    &lt;filter string=&quot;处理中&quot; domain=&quot;[('state','=','处理中')]&quot;/&gt;&#10;                    &lt;filter string=&quot;已审核&quot; domain=&quot;[('state','=','已审核')]&quot;/&gt;&#10;                    &lt;separator/&gt;&#10;                    &lt;filter string=&quot;未查阅&quot; domain=&quot;[('manager_state','=','未查阅')]&quot;/&gt;&#10;                    &lt;filter string=&quot;已读并确认&quot; domain=&quot;[('manager_state','=','已读并确认')]&quot;/&gt;&#10;                    &lt;filter string=&quot;已读并拒绝&quot; domain=&quot;[('manager_state','=','已读并拒绝')]&quot;/&gt;&#10;                    &lt;separator/&gt;&#10;                    &lt;filter string=&quot;已归档&quot; domain=&quot;[('active','=',True)]&quot;/&gt;&#10;                    &lt;filter string=&quot;未归档&quot; domain=&quot;[('active','=',False)]&quot;/&gt;&#10;                    &lt;separator/&gt;&#10;                    &lt;group expand=&quot;0&quot; string=&quot;分组&quot;&gt;&#10;                        &lt;filter string=&quot;审核人&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'write_id'}&quot;/&gt;&#10;                        &lt;filter string=&quot;业务员&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'user_id'}&quot;/&gt;&#10;                        &lt;filter string=&quot;客户&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'partner_id'}&quot;/&gt;&#10;                        &lt;filter string=&quot;月单据&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'date_order'}&quot;/&gt;&#10;                        &lt;filter string=&quot;审批状态&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'manager_state'}&quot;/&gt;&#10;                        &lt;filter string=&quot;单据状态&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'state'}&quot;/&gt;&#10;                        &lt;filter string=&quot;公司&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'company_id'}&quot;/&gt;&#10;                    &lt;/group&gt;&#10;                &lt;/search&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;odoo_view_action_amos_template&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;模块名称&lt;/field&gt;&#10;            &lt;field name=&quot;res_model&quot;&gt;amos.template&lt;/field&gt;&#10;            &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;            &lt;field name=&quot;view_mode&quot;&gt;tree,calendar,form&lt;/field&gt;&#10;            &lt;field name=&quot;context&quot;&gt;{&#10;                'search_default_my_orders_filter': 1}&#10;            &lt;/field&gt;&#10;            &lt;field name=&quot;view_id&quot; ref=&quot;odoo_view_tree_amos_template&quot;/&gt;&#10;            &lt;field name=&quot;search_view_id&quot; ref=&quot;odoo_view_search_amos_template&quot;/&gt;&#10;            &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;                &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;                    创建单据.&#10;                &lt;/p&gt;&#10;                &lt;p&gt;&#10;                &lt;/p&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;&#10;        &lt;menuitem action=&quot;odoo_view_action_amos_template&quot; id=&quot;menu_amos_template&quot; sequence=&quot;0&quot;/&gt;&#10;&#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;" description="AmosERP标准视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="options horizontal" value="options=&quot;{'horizontal': true}&quot;" description="水平显示" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class oe_structure" value="class=&quot;oe_structure&quot;" description="class=&quot;oe_structure&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class row" value="class=&quot;row&quot;" description="class=&quot;row&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="no_open" value="options=&quot;{'no_open': True}&quot;" description="options=&quot;{'no_open': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="no_create" value="options=&quot;{'no_create': True}&quot;&#10;" description="options=&quot;{'no_create': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="no_create_edit" value="options=&quot;{'no_create_edit': True}&quot;" description="options=&quot;{'no_create_edit': True}&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="label" value="&lt;label for=&quot;partner_id&quot; class=&quot;label label-danger&quot;/&gt;" description="&lt;label for=&quot;partner_id&quot; class=&quot;label label-danger&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="button action" value="&lt;button name=&quot;%(Amos_Base.action_view_work_flows_wizard)d&quot; type=&quot;action&quot; string=&quot;审核&quot; class='oe_highlight'&#10;                                groups=&quot;Amos_Sale.sale_user,Amos_Sale.sale_manager,Amos_Sale.sale_shop_manager&quot;&#10;                                attrs=&quot;{'invisible': ['|',('write_id','=',False),('is_look','=',False)]}&quot;&#10;                                context=&quot;{'wkf': 'object_ok,object_no','type_flows': 'button','message_template': 20000}&quot;/&gt;" description="导向按钮" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class oe_save_only" value="class=&quot;oe_save_only&quot;" description="编辑下不显示class=&quot;oe_save_only&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class oe_edit_only" value="class=&quot;oe_edit_only&quot;" description="编辑下显示class=&quot;oe_edit_only&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="parent" value="parent=&quot;sale.prod_config_main&quot;" description="关联上级 parent=&quot;&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="groups group_no_one" value="groups=&quot;base.group_no_one&quot;" description="groups=&quot;base.group_no_one&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="web_icon" value="web_icon=&quot;sale,static/description/icon.png&quot;" description="web_icon=&quot;sale,static/description/icon.png&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class o_sale_confirm" value="class=&quot;o_sale_confirm&quot;" description="class=&quot;o_sale_confirm&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="div class oe_title" value="&lt;div class=&quot;oe_title&quot;&gt;&#10;    &lt;h1&gt;&#10;        &lt;field name=&quot;name&quot; readonly=&quot;1&quot;/&gt;&#10;    &lt;/h1&gt;&#10;&lt;/div&gt;" description="&lt;div class=&quot;oe_title&quot;&gt;&lt;/div&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="class oe_inline" value="class=&quot;oe_inline&quot;" description="class=&quot;oe_inline&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group class oe_subtotal_footer oe_right" value="&lt;group class=&quot;oe_subtotal_footer oe_right&quot; colspan=&quot;2&quot; name=&quot;sale_total&quot;&gt;&#10;    &lt;field name=&quot;amount&quot; nolabel=&quot;1&quot; class=&quot;oe_subtotal_footer_separator&quot; /&gt;&#10;&lt;/group&gt;&#10;&lt;field name=&quot;note&quot; class=&quot;oe_inline&quot; placeholder=&quot;备注.&quot;/&gt;&#10;&lt;div class=&quot;oe_clear&quot;/&gt;" description="组左显示备注右显示合计" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="view form editable_list" value="&lt;record id=&quot;view_order_form_editable_list&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;sale.order.form.editable.list&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;sale.order&lt;/field&gt;&#10;    &lt;field name=&quot;inherit_id&quot; ref=&quot;sale.view_order_form&quot;/&gt;&#10;    &lt;field name=&quot;groups_id&quot; eval=&quot;[(4, ref('product.group_stock_packaging')), (4, ref('sale.group_mrp_properties'))]&quot;/&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;xpath expr=&quot;//field[@name='order_line']/tree&quot; position=&quot;attributes&quot;&gt;&#10;            &lt;attribute name=&quot;editable&quot;/&gt;&#10;        &lt;/xpath&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;" description="视图字段列表属性修改" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="groups filter" value="&lt;filter string=&quot;我的单据&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'user_id'}&quot;/&gt;" description="字段分组" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="filter my_orders_filter" value="&lt;filter string=&quot;我的单据&quot; domain=&quot;[('user_id','=',uid)]&quot; name=&quot;my_orders_filter&quot;/&gt;" description="我的单据" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="default many2many" value="production_ids = fields.Many2many('mrp.production.line', 'mrp_production_line_workorder_rel', 'workorder_id',&#10;                                  'production_id', default=_get_default_production_ids, string=u'物料明细')&#10;&#10;def _get_default_production_ids(self):&#10;    context = dict(self._context or {})&#10;    active_id = context.get('active_id')&#10;    active_model = context.get('active_model')&#10;    workorder = self.env[active_model].browse(active_id[0])&#10;    production_ids = self.env['mrp.production.line'].search(&#10;        [('order_id', '=', workorder.production_id.id), ('workorder_id', '=', False)])&#10;    return [(6, 0, [production_ids.ids])]" description="many2many默认值" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="view field priority" value="&lt;field name=&quot;priority&quot;&gt;4&lt;/field&gt;" description="视图的权重&lt;field name=&quot;priority&quot;&gt;4&lt;/field&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="header" value="&lt;header&gt;&#10;&lt;/header&gt;" description="&lt;header&gt; &lt;/header&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act tree form" value="&#10;&lt;record id=&quot;action_res_groups_view1&quot; model=&quot;ir.actions.act_window.view&quot;&gt;&#10;    &lt;field eval=&quot;10&quot; name=&quot;sequence&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;tree&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;odoo_view_groups_tree&quot;/&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;odoo_action_res_groups&quot;/&gt;&#10;&lt;/record&gt;&#10;&lt;record id=&quot;action_res_groups_view2&quot; model=&quot;ir.actions.act_window.view&quot;&gt;&#10;    &lt;field eval=&quot;20&quot; name=&quot;sequence&quot;/&gt;&#10;    &lt;field name=&quot;view_mode&quot;&gt;form&lt;/field&gt;&#10;    &lt;field name=&quot;view_id&quot; ref=&quot;odoo_view_groups_form&quot;/&gt;&#10;    &lt;field name=&quot;act_window_id&quot; ref=&quot;odoo_action_res_groups&quot;/&gt;&#10;&lt;/record&gt;" description="窗口绑定视图与列表" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="res groups" value=" &lt;record id=&quot;my_report&quot; model=&quot;res.groups&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;权限名称&lt;/field&gt;&#10;    &lt;field name=&quot;category_id&quot; ref=&quot;base.module_category_hidden&quot;/&gt;&#10;    &lt;field name=&quot;users&quot; eval=&quot;[(4, ref('base.user_root'))]&quot;/&gt;&#10;&lt;/record&gt;" description="增加特性权限" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ir module category" value="&lt;record id=&quot;data_import&quot; model=&quot;ir.module.category&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;数据导入&lt;/field&gt;&#10;&lt;/record&gt;" description="设置权限分类数据" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="security groups all" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;        &lt;record id=&quot;sale_groups&quot; model=&quot;ir.module.category&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;销售&lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;sale_user&quot; model=&quot;res.groups&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;业务员&lt;/field&gt;&#10;            &lt;field name=&quot;users&quot; eval=&quot;[(4, ref('base.user_root'))]&quot;/&gt;&#10;            &lt;field name=&quot;category_id&quot; ref=&quot;sale_groups&quot;/&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;sale_manager&quot; model=&quot;res.groups&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;销售-经理&lt;/field&gt;&#10;            &lt;field name=&quot;users&quot; eval=&quot;[(4, ref('base.user_root'))]&quot;/&gt;&#10;            &lt;field name=&quot;category_id&quot; ref=&quot;sale_groups&quot;/&gt;&#10;        &lt;/record&gt;&#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;&#10;" description="标准的权限模板" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group_system" value="groups=&quot;base.group_system&quot;" description="ERP系统管理员groups=&quot;base.group_system&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group_no_one" value="groups=&quot;base.group_no_one&quot;" description="ERP员工groups=&quot;base.group_no_one&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="group_erp_manager" value="groups=&quot;base.group_erp_manager&quot;" description="ERP管理员groups=&quot;base.group_erp_manager&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="page" value="&lt;page string=&quot;备注&quot;&gt;&#10;    &lt;field name=&quot;comment&quot;/&gt;&#10;&lt;/page&gt;" description="创建一个页卡&lt;page string=&quot;备注&quot;&gt;&lt;/page&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act view_id ref" value="&lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_tree&quot;/&gt;" description="&lt;field name=&quot;view_id&quot; ref=&quot;odoo_res_partner_customer_tree&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field name no" value="&lt;field name=&quot;$clipboard$&quot;/&gt;" description="&lt;field name=&quot;name&quot;/&gt; 粘贴字段" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="name" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act search" value="&lt;field name=&quot;search_view_id&quot; ref=&quot;view_search_sale_order&quot;/&gt;" description="窗口关联查询&lt;field name=&quot;search_view_id&quot; ref=&quot;view_search_sale_order&quot;/&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xpath position attributes" value="&lt;xpath expr=&quot;//group[@name='mrp']&quot; position=&quot;attributes&quot;&gt;&#10;    &lt;attribute name=&quot;string&quot;&gt;生产类&lt;/attribute&gt;&#10;&lt;/xpath&gt;" description="修改视图属性&lt;attribute name=&quot;string&quot;&gt;生产类&lt;/attribute&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="wizard form all" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;&#10;        &lt;record id=&quot;view_form_ir_actions_act_window_wizard&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;ir.actions.act_window.wizard.form&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;ir.actions.act_window.wizard&lt;/field&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;form string=&quot;批量添加&quot; create=&quot;false&quot; copy=&quot;false&quot; write=&quot;false&quot; delete=&quot;0&quot;&gt;&#10;                    &lt;sheet&gt;&#10;                        &lt;separator string=&quot;短信内容&quot;/&gt;&#10;                        &lt;field name=&quot;model_ids&quot;/&gt;&#10;                    &lt;/sheet&gt;&#10;                    &lt;footer&gt;&#10;                        &lt;button string=&quot;确认&quot; name=&quot;action_done&quot; type=&quot;object&quot; default_focus=&quot;1&quot; class=&quot;oe_highlight&quot;&#10;                        context=&quot;{'autograph':'AmosERP'}&quot;/&gt;&#10;                    &lt;/footer&gt;&#10;                &lt;/form&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;&#10;        &lt;act_window id=&quot;menu_ir_actions_act_window_wizard&quot;&#10;                    multi=&quot;False&quot;&#10;                    key2=&quot;client_action_multi&quot;&#10;                    name=&quot;批量添加动作&quot;&#10;                    res_model=&quot;ir.actions.act_window.wizard&quot;&#10;                    src_model=&quot;ir.actions.act_window&quot;&#10;                    view_mode=&quot;form&quot;&#10;                    target=&quot;new&quot;&#10;                    view_type=&quot;form&quot;&#10;                    context=&quot;{'mass_convert' : True}&quot;&#10;                    view_id=&quot;view_form_ir_actions_act_window_wizard&quot;&#10;        /&gt;&#10;&#10;&#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;&#10;" description="向导" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="res partner count order" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;odoo&gt;&#10;        &lt;record id=&quot;act_res_partner_2_sale_order&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;销售订单&lt;/field&gt;&#10;            &lt;field name=&quot;res_model&quot;&gt;sale.order&lt;/field&gt;&#10;            &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;            &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;            &lt;field name=&quot;context&quot;&gt;{'search_default_partner_id': active_id}&lt;/field&gt;&#10;            &lt;field name=&quot;groups_id&quot; eval=&quot;[(4, ref('Amos_Sale.sale_user'))]&quot;/&gt;&#10;            &lt;field name=&quot;help&quot; type=&quot;html&quot;&gt;&#10;              &lt;p class=&quot;oe_view_nocontent_create&quot;&gt;&#10;                创建销售订单.&#10;              &lt;/p&gt;&#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;&#10;        &lt;record id=&quot;res_partner_customer_view_buttons&quot; model=&quot;ir.ui.view&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;res.partner.view.buttons&lt;/field&gt;&#10;            &lt;field name=&quot;model&quot;&gt;res.partner&lt;/field&gt;&#10;            &lt;field name=&quot;inherit_id&quot; ref=&quot;Amos_Base.odoo_res_partner_customer_form&quot; /&gt;&#10;            &lt;field name=&quot;priority&quot; eval=&quot;100&quot;/&gt;&#10;            &lt;field name=&quot;groups_id&quot; eval=&quot;[(4, ref('Amos_Sale.sale_user'))]&quot;/&gt;&#10;            &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;                &lt;div name=&quot;button_box&quot; position=&quot;inside&quot;&gt;&#10;                    &lt;button class=&quot;oe_stat_button&quot; type=&quot;action&quot; name=&quot;%(Amos_Sale.act_res_partner_2_sale_order)d&quot;&#10;                        attrs=&quot;{'invisible': [('customer', '=', False)]}&quot; context=&quot;{'default_initial': '销售订单'}&quot;&#10;                        icon=&quot;fa-usd&quot;&gt;&#10;                        &lt;field string=&quot;销售订单&quot; name=&quot;sale_order_count&quot; widget=&quot;statinfo&quot;/&gt;&#10;                    &lt;/button&gt;     &#10;                &lt;/div&gt;&#10;              &#10;            &lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;&#10;&#10;&#10;&lt;/odoo&gt;&#10;" description="业务伙伴统计订单数量" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xml odoo1" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;        &#10;     &#10;&lt;/odoo&gt;" description="空白框架" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act limit" value="&lt;field name=&quot;limit&quot;&gt;40&lt;/field&gt;" description="定义列显示行数窗口" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="widget color" value="widget=&quot;color&quot;" description="widget=&quot;color&quot;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="qweb img barcode Code128" value="&lt;img t-att-src=&quot;'/report/barcode/?type=%s&amp;amp;value=%s&amp;amp;width=%s&amp;amp;height=%s' % ('Code128', doc.name, 200, 100)&quot;/&gt;" description="一维码图片" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="qweb img company logo" value="&lt;img t-if=&quot;res_company.logo&quot; t-att-src=&quot;'data:image/png;base64,%s' % res_company.logo&quot; style=&quot;max-height: 45px;&quot;/&gt;" description="公司图片" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="sheet" value="&lt;sheet&gt;&lt;/sheet&gt;" description="sheet" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="html img" value="&lt;img alt=&quot;型式简图&quot; src=&quot;https://image.uc.cn/o/wemedia/s/upload/1705221359fb7c19c155cfcc1d61a41e355d254c6c;,3,jpegx;3,310x&quot;/&gt;" description="XML 插入图片" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration muted" value="decoration-muted=&quot;state == 'cancel'&quot;" description="列表颜色 减弱的" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration info" value="decoration-info=&quot;state == 'draft'&quot;" description="列表颜色 基本颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration danger" value="decoration-danger=&quot;state not in ('cancel', 'done') and scheduled_date &amp;lt; current_date&quot;" description="列表颜色 危险颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration bf" value="decoration-bf=&quot;message_needaction==True&quot;" description="列表颜色 粗体颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration success" value="decoration-success=&quot;product_qty==qty_done&quot;" description="列表颜色 成功颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration warning" value="decoration-warning=&quot;state=='draft'&quot;" description="列表颜色 警告颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration primary" value="decoration-muted=&quot;state == 'cancel'&quot;" description="列表颜色 基本颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="decoration it" value="decoration-it=&quot;state == 'cancel'&quot;" description="列表颜色 其它颜色" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree order" value="default_order=&quot;date_order desc&quot;" description="列表排序" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree create" value="create=&quot;false&quot;" description="列表隐藏创建" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree edit" value="edit=&quot;false&quot;" description="列表隐藏编辑" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree delete" value="delete=&quot;false&quot;" description="列表隐藏删除" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="menuitem all" value=" &lt;menuitem&#10;        id=&quot;menu_name&quot;&#10;        name=&quot;名称&quot;&#10;        action=&quot;mrp_mps_report_action_client&quot;&#10;        groups=&quot;&quot;&#10;        sequence=&quot;1&quot;&#10;        parent=&quot;mrp_mps_menu_planning&quot;/&gt;" description="一条完整的菜单定义" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tem" value="111$camelCase$&#10;222$capitalize$&#10;333$capitalizeAndUnderscore$&#10;444$clipboard$&#10;555$clipboard$&#10;666$collectionElementName$&#10;777$clipboard$&#10;888$completeSmart$&#10;999$concat$&#10;aaa$date$&#10;bbb$decapitalize$&#10;ccc$enum$&#10;ddd$escapeString$&#10;eee$fileName$&#10;fff$fileNameWithoutExtension$&#10;ggg$firstWord$&#10;hhh$groovyScript$&#10;iii$lineNumber$&#10;jjj$lowercaseAndDash$&#10;lll$pyFunctionName$&#10;nnn$snakeCase$&#10;ooo$spaceSeparated$&#10;ppp$time$&#10;qqq$underscoresToCamelCase$&#10;rrr$underscoresToSpaces$&#10;sss$underscoresToSpaces$&#10;ttt$user$&#10;" description="变量模板" toReformat="false" toShortenFQNames="false">
+    <variable name="camelCase" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="capitalize" expression="capitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="capitalizeAndUnderscore" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <variable name="collectionElementName" expression="collectionElementName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="completeSmart" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="concat" expression="concat(expressions...)" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="decapitalize" expression="decapitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="enum" expression="enum(...)" defaultValue="" alwaysStopAt="true" />
+    <variable name="escapeString" expression="escapeString(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="fileName" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="fileNameWithoutExtension" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="firstWord" expression="firstWord(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="groovyScript" expression="groovyScript(&quot;groovy code&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="lineNumber" expression="lineNumber()" defaultValue="" alwaysStopAt="true" />
+    <variable name="lowercaseAndDash" expression="lowercaseAndDash(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="pyFunctionName" expression="pyFunctionName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="snakeCase" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="spaceSeparated" expression="spaceSeparated(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="underscoresToCamelCase" expression="underscoresToCamelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="underscoresToSpaces" expression="underscoresToSpaces(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="user" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="button object icon" value="&lt;button icon=&quot;/email_template/static/src/img/email_template_save.png&quot; type=&quot;object&quot; name=&quot;save_as_template&quot; string=&quot;Save as new template&quot; class=&quot;oe_link&quot; help=&quot;Save as a new template&quot; /&gt;&#10;" description="按钮带图片" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field state" value="&lt;field name='state' widget='statusbar' statusbar_visible=&quot;草稿,处理中,已审核&quot;/&gt;" description="进度条" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="button object all" value="&lt;button name='button_loading_draft' states='处理中' string='重置草稿' type='object' class='oe_highlight'/&gt;&#10;&lt;button name='button_done_draft' states='已审核' string='重置草稿' type='object' class='oe_highlight'/&gt;&#10;&lt;button name='button_loading' states='草稿' string='提交草稿' type='object' class='oe_highlight'/&gt;&#10;&lt;button name='button_done' states='处理中' string='审核' type='object' class='oe_highlight'/&gt;" description="标准审核流程" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act context create" value="&lt;field name=&quot;context&quot;&gt;{'create': False}&lt;/field&gt;&#10;            " description="窗口 传Form create无创建" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="attrs state readonly" value="attrs=&quot;{'readonly': [('state', 'in', (u'处理中',u'已审核'))]}&quot;" description="指定状态下只读 处理中-已审核" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="security groups" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data&gt;&#10;        &lt;record id=&quot;purchase_groups&quot; model=&quot;ir.module.category&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;采购&lt;/field&gt;&#10;        &lt;/record&gt;&#10;        &lt;record id=&quot;purchase_users&quot; model=&quot;res.groups&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;采购-用户&lt;/field&gt;&#10;            &lt;field name=&quot;category_id&quot; ref=&quot;purchase_groups&quot;/&gt;&#10;            &lt;field name=&quot;users&quot; eval=&quot;[(4, ref('base.user_root'))]&quot;/&gt;&#10;        &lt;/record&gt;&#10;&#10;        &lt;record id=&quot;purchase_manager&quot; model=&quot;res.groups&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;采购-经理&lt;/field&gt;&#10;            &lt;field name=&quot;category_id&quot; ref=&quot;purchase_groups&quot;/&gt;&#10;            &lt;field name=&quot;implied_ids&quot; eval=&quot;[(4, ref('purchase_users'))]&quot;/&gt;&#10;            &lt;field name=&quot;users&quot; eval=&quot;[(4, ref('base.user_root'))]&quot;/&gt;&#10;        &lt;/record&gt;&#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;&#10;" description="完整的权限模板" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="from message mail v11" value="&lt;div class=&quot;oe_chatter&quot;&gt;&#10;    &lt;field name=&quot;message_follower_ids&quot; widget=&quot;mail_followers&quot;/&gt;&#10;    &lt;field name=&quot;activity_ids&quot; widget=&quot;mail_activity&quot;/&gt;&#10;    &lt;field name=&quot;message_ids&quot; widget=&quot;mail_thread&quot;/&gt;&#10;&lt;/div&gt;" description="视图上定义社交" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree message" value="&lt;field name=&quot;message_needaction&quot; invisible=&quot;1&quot;/&gt;" description="列表定义消息数量" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree decoration message" value="decoration-bf=&quot;message_needaction==True&quot;" description="列表属性消息数量" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search message" value=" &lt;filter string=u&quot;未读邮件&quot; name=&quot;message_needaction&quot; domain=&quot;[('message_needaction','=',True)]&quot;/&gt;" description="搜索显示未读邮件" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act_window key2" value="&lt;act_window&#10;            id=&quot;helpdesk_ticket_actions_act_window_merge_tickets&quot;&#10;            res_model=&quot;helpdesk.ticket.merge&quot;&#10;            src_model=&quot;helpdesk.ticket&quot;&#10;            target=&quot;new&quot;&#10;            multi=&quot;True&quot;&#10;            key2=&quot;client_action_multi&quot;&#10;            view_mode=&quot;form&quot;&#10;            name=&quot;Merge Selected Tickets&quot;/&gt;" description="动作菜单" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form position inside" value="position=&quot;inside&quot;" description="对象中插入" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act context1" value="&lt;field name=&quot;context&quot;&gt;{'search_default_active': True}&lt;/field&gt;" description="窗口传值{'search_default_active': True}" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="act active_id" value="&lt;field name=&quot;context&quot;&gt;{'search_default_employee_id': active_id, 'default_employee_id': active_id}&lt;/field&gt;" description="窗口上下文传active_id" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="act context filter" value="&lt;field name=&quot;context&quot;&gt;{'search_default_misc_filter':1, 'view_no_maturity': True}&lt;/field&gt;" description="窗口默认选择条件" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="div button active" value="&lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;                        &lt;button name=&quot;toggle_active&quot; type=&quot;object&quot;&#10;                                class=&quot;oe_stat_button&quot; icon=&quot;fa-archive&quot;&gt;&#10;                            &lt;field name=&quot;active&quot; widget=&quot;boolean_button&quot;&#10;                                options='{&quot;terminology&quot;: &quot;archive&quot;}'/&gt;&#10;                        &lt;/button&gt;&#10;                    &lt;/div&gt;" description="归档完整片断" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form four create edit delete" value="create=&quot;false&quot; edit=&quot;false&quot; delete=&quot;false&quot;" description="表单窗体创建,修改,删除 隐藏按钮" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field image" value="&lt;field name=&quot;image&quot; widget='image' class=&quot;oe_avatar&quot; options='{&quot;preview_image&quot;: &quot;image_medium&quot;, &quot;size&quot;: [90, 90]}'/&gt;" description="图像字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xml data" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;data noupdate=&quot;1&quot;&gt;&#10;        &#10;        &#10;        &lt;record id=&quot;product_category_all&quot; model=&quot;product.category&quot;&gt;&#10;            &lt;field name=&quot;name&quot;&gt;All&lt;/field&gt;&#10;        &lt;/record&gt;&#10;&#10;&#10;    &lt;/data&gt;&#10;&lt;/odoo&gt;&#10;" description="完整的演示数据模型" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data yesterday long" value="&lt;filter string=&quot;昨天订单&quot; name=&quot;yesterday&quot;  domain=&quot;[('date_order','&amp;gt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')),('date_order','&amp;lt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 23:59:59')) ]&quot;/&gt;" description="查询昨天数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data last_month long" value="&lt;filter string=&quot;上月订单&quot; name=&quot;last_month&quot; domain=&quot;[('date_order','&amp;lt;', time.strftime('%Y-%m-01 00:00:00')),('date_order','&amp;gt;=',  (context_today() - relativedelta(months=1)).strftime('%Y-%m-01 00:00:00') ) ]&quot;/&gt;" description="查询上月数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data month long" value="&lt;filter string=&quot;本月订单&quot; name=&quot;month1&quot;  domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', (context_today() + relativedelta(months=1, day=1, days=-1)).strftime('%Y-%m-%d 23:59:59')),]&quot;/&gt;" description="查询本月数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data year long" value="&lt;filter string=&quot;本年订单&quot; name=&quot;year&quot; domain=&quot;[('date_order','&amp;lt;=', time.strftime('%Y-12-31 23:59:59')),('date_order','&amp;gt;=',time.strftime('%Y-01-01 00:00:00'))]&quot;/&gt;" description="查询本年数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data today long" value="&lt;filter string=&quot;今天订单&quot; name=&quot;today&quot; domain=&quot;[('date_order', '&amp;gt;=', time.strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', time.strftime('%Y-%m-%d 23:59:59'))]&quot; /&gt;" description="查询今天数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter domain" value="&lt;filter string=&quot;我的负责的单据&quot; domain=&quot;[('user_id','=',uid)]&quot; name=&quot;my_orders_filter&quot;/&gt;" description="过滤查询" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter group" value="&lt;filter string=&quot;经办人&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'user_id'}&quot;/&gt;" description="查询数据分组" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="xpath attributes all" value="&lt;xpath expr=&quot;//field[@name='track_service']&quot; position=&quot;attributes&quot;&gt;     &#10;&lt;attribute name=&quot;invisible&quot;&gt;False&lt;/attribute&gt;    &#10; &lt;attribute name=&quot;attrs&quot;&gt;{'invisible': [('type','!=','service')]}&lt;/attribute&gt; &#10; &lt;/xpath&gt;&#10;" description="支持的属性" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="search filter last_week long" value="&lt;filter string=&quot;上周订单&quot; name=&quot;last_week&quot; domain=&quot;[('date_order','&amp;gt;=', (context_today() - datetime.timedelta(weeks=1)).strftime('%Y-%m-%d 00:00:00')),('date_order','&amp;lt;=', (context_today() - datetime.timedelta(weeks=1,days=-6)).strftime('%Y-%m-%d 23:59:59'))]&quot;/&gt;" description="查询上周数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter yesterday long" value="&lt;filter string=&quot;昨天订单&quot; name=&quot;yesterday&quot;  domain=&quot;[('date_order','&amp;gt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')),('date_order','&amp;lt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 23:59:59')) ]&quot;/&gt;&#10;" description="查询昨天数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter week long" value="&lt;filter string=&quot;本周订单&quot; name=&quot;week&quot; domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d 23:59:59')),]&quot;/&gt;" description="查询本周数据 长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data all long" value="&lt;filter string=&quot;今天订单&quot; name=&quot;today&quot; domain=&quot;[('date_order', '&amp;gt;=', time.strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', time.strftime('%Y-%m-%d 23:59:59'))]&quot; /&gt;&#10;&lt;filter string=&quot;昨天订单&quot; name=&quot;yesterday&quot;  domain=&quot;[('date_order','&amp;gt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 00:00:00')),('date_order','&amp;lt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d 23:59:59')) ]&quot;/&gt;&#10;&lt;filter string=&quot;本周订单&quot; name=&quot;week&quot; domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d 23:59:59')),]&quot;/&gt;&#10;&lt;filter string=&quot;上周订单&quot; name=&quot;last_week&quot; domain=&quot;[('date_order','&amp;gt;=', (context_today() - datetime.timedelta(weeks=1)).strftime('%Y-%m-%d 00:00:00')),('date_order','&amp;lt;=', (context_today() - datetime.timedelta(weeks=1,days=-6)).strftime('%Y-%m-%d 23:59:59'))]&quot;/&gt;&#10;&lt;filter string=&quot;本月订单&quot; name=&quot;month1&quot;  domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d 00:00:00')),('date_order', '&amp;lt;=', (context_today() + relativedelta(months=1, day=1, days=-1)).strftime('%Y-%m-%d 23:59:59')),]&quot;/&gt;&#10;&lt;filter string=&quot;上月订单&quot; name=&quot;last_month&quot; domain=&quot;[('date_order','&amp;lt;', time.strftime('%Y-%m-01 00:00:00')),('date_order','&amp;gt;=',  (context_today() - relativedelta(months=1)).strftime('%Y-%m-01 00:00:00') ) ]&quot;/&gt;&#10;&lt;filter string=&quot;本年订单&quot; name=&quot;year&quot; domain=&quot;[('date_order','&amp;lt;=', time.strftime('%Y-12-31 23:59:59')),('date_order','&amp;gt;=',time.strftime('%Y-01-01 00:00:00'))]&quot;/&gt;" description="日期查询数据  长日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search filter data short all" value="&lt;filter string=&quot;今天订单&quot; name=&quot;today&quot; domain=&quot;[('date_order', '&amp;gt;=', time.strftime('%Y-%m-%d')),('date_order', '&amp;lt;=', time.strftime('%Y-%m-%d'))]&quot; /&gt;&#10;&lt;filter string=&quot;昨天订单&quot; name=&quot;yesterday&quot;  domain=&quot;[('date_order','&amp;gt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d')),('date_order','&amp;lt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d')) ]&quot;/&gt;&#10;&lt;filter string=&quot;本周订单&quot; name=&quot;week&quot; domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d')),('date_order', '&amp;lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d')),]&quot;/&gt;&#10;&lt;filter string=&quot;上周订单&quot; name=&quot;last_week&quot; domain=&quot;[('date_order','&amp;gt;=', (context_today() - datetime.timedelta(weeks=1)).strftime('%Y-%m-%d')),('date_order','&amp;lt;=', (context_today() - datetime.timedelta(weeks=1,days=-6)).strftime('%Y-%m-%d'))]&quot;/&gt;&#10;&lt;filter string=&quot;本月订单&quot; name=&quot;month1&quot;  domain=&quot;['&amp;amp;',('date_order', '&gt;=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d')),('date_order', '&amp;lt;=', (context_today() + relativedelta(months=1, day=1, days=-1)).strftime('%Y-%m-%d')),]&quot;/&gt;&#10;&lt;filter string=&quot;上月订单&quot; name=&quot;last_month&quot; domain=&quot;[('date_order','&amp;lt;', time.strftime('%Y-%m-01')),('date_order','&amp;gt;=',  (context_today() - relativedelta(months=1)).strftime('%Y-%m-01') ) ]&quot;/&gt;&#10;&lt;filter string=&quot;本年订单&quot; name=&quot;year&quot; domain=&quot;[('date_order','&amp;lt;=', time.strftime('%Y-12-31')),('date_order','&amp;gt;=',time.strftime('%Y-01-01'))]&quot;/&gt;" description="日期查询数据  短日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="menu delete" value="&lt;delete id=&quot;stock.all_picking&quot; model=&quot;ir.ui.menu&quot;/&gt;" description="删除菜单" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field create write date" value="&lt;field name=&quot;create_uid&quot; string=&quot;创建人&quot;/&gt;&#10;&lt;field name=&quot;create_date&quot; string=&quot;创建日期&quot;/&gt;&#10;&lt;field name=&quot;write_uid&quot; string=&quot;修改人&quot;/&gt;&#10;&lt;field name=&quot;write_date&quot; string=&quot;修改日期&quot;/&gt;&#10;" description="系统默认的创建人与最后一次修改人字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field create write date four" value="&lt;field name=&quot;create_date&quot;/&gt;&#10;&lt;field name=&quot;create_uid&quot;/&gt;&#10;&lt;field name=&quot;write_uid&quot;/&gt;&#10;&lt;field name=&quot;write_date&quot;/&gt;" description="创建人与创建日期,修改人与创建日期" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form sheet group" value="&lt;form string=&quot;表单&quot;&gt;&#10;    &lt;sheet&gt;&#10;        &lt;div class=&quot;oe_button_box&quot; name=&quot;button_box&quot;&gt;&#10;        &lt;/div&gt;&#10;        &lt;group&gt;&#10;            &lt;group&gt;&#10;                &lt;field name=&quot;name&quot;/&gt;&#10;            &lt;/group&gt;&#10;            &lt;group&gt;&#10;            &lt;/group&gt;&#10;        &lt;/group&gt;&#10;    &lt;/sheet&gt;&#10;&lt;/form&gt;" description="简单的表单" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field name type" value="&lt;field name=&quot;type&quot; required=&quot;1&quot; widget=&quot;radio&quot; options=&quot;{'horizontal': true}&quot;/&gt;" description="标准 字段type 水平" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field name note" value="&lt;field name=&quot;note&quot; placeholder=&quot;暂无备注信息&quot;/&gt;" description="标准 字段 note" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="menuitem web_icon icon" value="web_icon=&quot;sale,static/description/icon.png&quot;" description="菜单图标" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field partner_id  class" value="&lt;label for=&quot;partner_id&quot; class=&quot;label label-danger&quot;/&gt;&#10;&lt;field name=&quot;partner_id&quot; domain=&quot;[('customer','=',True),('type', '=', 'contact'),('parent_id', '=', False)]&quot;&#10;       context=&quot;{'search_default_customer':1, 'show_address': 1,'form_view_ref':'Amos_Base.odoo_res_partner_customer_form', 'tree_view_ref':'Amos_Base.odoo_res_partner_customer_tree'}&quot;&#10;       options='{&quot;always_reload&quot;: True}' nolabel=&quot;1&quot;/&gt;" description="带颜色的字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="form tree separator order_line" value="&lt;separator string=&quot;教材杂费&quot; colspan=&quot;2&quot;/&gt;&#10;&lt;field name=&quot;order_line&quot;&gt;&#10;    &lt;tree string=&quot;教材杂费&quot; editable=&quot;bottom&quot;&gt;&#10;        &lt;field name=&quot;sequence&quot; widget=&quot;handle&quot;/&gt;&#10;        &lt;field name=&quot;product_id&quot; required='1'&#10;               options=&quot;{'no_open': True, 'no_create': True, 'no_create_edit': True}&quot;/&gt;&#10;        &lt;field name=&quot;product_uom_qty&quot;/&gt;&#10;        &lt;field name=&quot;product_uom&quot;/&gt;&#10;        &lt;field name=&quot;price_unit&quot;/&gt;&#10;        &lt;field name=&quot;price_subtotal&quot; sum=&quot;合计&quot;/&gt;&#10;        &lt;field name=&quot;name&quot;/&gt;&#10;    &lt;/tree&gt;&#10;&lt;/field&gt;" description="表单定义列表字段" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="button oe_link" value="class=&quot;oe_link&quot;" description="button 超链" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="qweb context_timestamp" value="&lt;span t-esc=&quot;context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')&quot;/&gt;" description="qweb 当前时间" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="tree field column_invisible" value="&lt;field name=&quot;qty_delivered&quot;  attrs=&quot;{'column_invisible': [('parent.state', 'not in', ['sale', 'done'])], 'readonly': [('qty_delivered_updateable', '=', False)]}&quot;/&gt;" description="隐藏列" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="field name id invisible" value="&lt;field name=&quot;id&quot; invisible=&quot;1&quot;/&gt;" description="字段 隐藏ID" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="button name div" value="&lt;button name=&quot;create_hd_issue_order&quot;&#10;                                    type=&quot;object&quot;&#10;                                    class=&quot;oe_stat_button&quot;&#10;                                    icon=&quot;fa-pencil-square-o&quot;&#10;                                    string=&quot;创建工单&quot;&#10;                                    attrs=&quot;{'invisible': ['|',('state','in',('已完成')),('simple_id','!=',False)]}&quot;&#10;                                    groups=&quot;hd_problem.group_hd_issue_order&quot;&#10;                            &gt;&#10;                            &lt;/button&gt;" description="右上角按钮" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="field many2one invisible" value="&lt;field name=&quot;$clipboard$&quot; readonly='1'&#10;                                       options=&quot;{'no_create': True, 'no_create_edit': True}&quot;&#10;                                       attrs=&quot;{'readonly': [('$clipboard$','!=',False)],'invisible': ['|',('$clipboard$', '=', False),('id', '=', False)]}&quot;/&gt;" description="字段没有值时隐藏" toReformat="false" toShortenFQNames="false">
+    <variable name="clipboard" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="view priority" value="&lt;field name=&quot;priority&quot;&gt;0&lt;/field&gt;" description="视图排序&lt;field name=&quot;priority&quot;&gt;0&lt;/field&gt;" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="views template" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;odoo&gt;&#10;    &lt;record id=&quot;view_ly_template_form&quot; model=&quot;ir.ui.view&quot;&gt;&#10;        &lt;field name=&quot;name&quot;&gt;ly.template.form&lt;/field&gt;&#10;        &lt;field name=&quot;model&quot;&gt;ly.template&lt;/field&gt;&#10;        &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;            &lt;form string=&quot;预算模板&quot;&gt;&#10;                &lt;sheet&gt;&#10;                    &lt;group&gt;&#10;                        &lt;group&gt;&#10;                            &lt;field name=&quot;name&quot;/&gt;&#10;                            &lt;field name=&quot;code&quot;/&gt;&#10;                        &lt;/group&gt;&#10;                        &lt;group&gt;&#10;                            &lt;field name=&quot;description&quot;/&gt;&#10;                        &lt;/group&gt;&#10;                    &lt;/group&gt;&#10;                &lt;/sheet&gt;&#10;            &lt;/form&gt;&#10;        &lt;/field&gt;&#10;    &lt;/record&gt;&#10;&#10;    &lt;record id=&quot;view_ly_template_tree&quot; model=&quot;ir.ui.view&quot;&gt;&#10;        &lt;field name=&quot;name&quot;&gt;ly.template.tree&lt;/field&gt;&#10;        &lt;field name=&quot;model&quot;&gt;ly.template&lt;/field&gt;&#10;        &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;            &lt;tree string=&quot;预算模板&quot;&gt;&#10;                &lt;field name=&quot;name&quot;/&gt;&#10;                &lt;field name=&quot;code&quot;/&gt;&#10;                &lt;field name=&quot;description&quot;/&gt;&#10;            &lt;/tree&gt;&#10;        &lt;/field&gt;&#10;    &lt;/record&gt;&#10;&#10;    &lt;record id=&quot;action_ly_template&quot; model=&quot;ir.actions.act_window&quot;&gt;&#10;        &lt;field name=&quot;name&quot;&gt;预算模板&lt;/field&gt;&#10;        &lt;field name=&quot;type&quot;&gt;ir.actions.act_window&lt;/field&gt;&#10;        &lt;field name=&quot;res_model&quot;&gt;ly.template&lt;/field&gt;&#10;        &lt;field name=&quot;view_type&quot;&gt;form&lt;/field&gt;&#10;        &lt;field name=&quot;view_mode&quot;&gt;tree,form&lt;/field&gt;&#10;        &lt;field name=&quot;view_id&quot; ref=&quot;view_ly_template_tree&quot;/&gt;&#10;    &lt;/record&gt;&#10;&#10;    &lt;menuitem action=&quot;action_ly_template&quot; id=&quot;menu_action_ly_template&quot; parent=&quot;ly_base.menu_budget_config&quot; sequence=&quot;02&quot;/&gt;&#10;&#10;&lt;/odoo&gt;" description="完整的属性分类视图" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="footer" value="&lt;footer&gt;&#10;    &lt;button name=&quot;button_ok&quot; string=&quot;确认&quot; type=&quot;object&quot; class=&quot;oe_highlight&quot;/&gt;&#10;    or&#10;    &lt;button string=&quot;取消&quot; class=&quot;oe_link&quot; special=&quot;cancel&quot;/&gt;&#10;&lt;/footer&gt;" description="视图footer" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="attrs options widget" value="options=&quot;{'horizontal': true}&quot; widget=&quot;radio&quot;" description="字段水平显示" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="widget web_ribbon" value="&lt;widget name=&quot;web_ribbon&quot; text=&quot;已放弃&quot; bg_color=&quot;bg-danger&quot; attrs=&quot;{'invisible': [('is_retain', '=', False)]}&quot;/&gt;&#10;&lt;widget name=&quot;web_ribbon&quot; text=&quot;已保留&quot; attrs=&quot;{'invisible': [('is_retain', '=',  True)]}&quot;/&gt;" description="右上角页签" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="search 1" value="&#10;&lt;record id=&quot;view_search_$fileNameWithoutExtension$&quot; model=&quot;ir.ui.view&quot;&gt;&#10;    &lt;field name=&quot;name&quot;&gt;$clipboard$.search&lt;/field&gt;&#10;    &lt;field name=&quot;model&quot;&gt;$clipboard$&lt;/field&gt;&#10;    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;&#10;        &lt;search string=&quot;查询&quot;&gt;&#10;            &lt;field name=&quot;name&quot; string=&quot;&quot; filter_domain=&quot;['|',('name','ilike',self),('code','ilike',self)]&quot;/&gt;&#10;            &lt;filter string=&quot;我的单据&quot; domain=&quot;[('user_id','=',uid)]&quot; name=&quot;my_order_filter&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;今天单据&quot; name=&quot;today&quot;  domain=&quot;[('date', '&amp;gt;=', time.strftime('%Y-%m-%d')),('date', '&amp;lt;=', time.strftime('%Y-%m-%d'))]&quot;/&gt;&#10;            &lt;filter string=&quot;昨天单据&quot; name=&quot;yesterday&quot; domain=&quot;[('date','&amp;gt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d')),('date','&amp;lt;=', (context_today() -datetime.timedelta(days=1)).strftime('%Y-%m-%d')) ]&quot;/&gt;&#10;            &lt;filter string=&quot;本周单据&quot; name=&quot;week&quot; domain=&quot;['&amp;amp;',('date', '&gt;=', (context_today() + relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d')),('date', '&amp;lt;=', (context_today() + relativedelta(weekday=6)).strftime('%Y-%m-%d')),]&quot;/&gt;&#10;            &lt;filter string=&quot;上周单据&quot; name=&quot;last_week&quot;  domain=&quot;[('date','&amp;gt;=', (context_today() - datetime.timedelta(weeks=1)).strftime('%Y-%m-%d')),('date','&amp;lt;=', (context_today() - datetime.timedelta(weeks=1,days=-6)).strftime('%Y-%m-%d'))]&quot;/&gt;&#10;            &lt;filter string=&quot;本月单据&quot; name=&quot;month1&quot; domain=&quot;['&amp;amp;',('date', '&gt;=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d')),('date', '&amp;lt;=', (context_today() + relativedelta(months=1, day=1, days=-1)).strftime('%Y-%m-%d')),]&quot;/&gt;&#10;            &lt;filter string=&quot;上月单据&quot; name=&quot;last_month&quot;  domain=&quot;[('date','&amp;lt;', time.strftime('%Y-%m-01')),('date','&amp;gt;=',  (context_today() - relativedelta(months=1)).strftime('%Y-%m-01') ) ]&quot;/&gt;&#10;            &lt;filter string=&quot;本年单据&quot; name=&quot;year&quot; domain=&quot;[('date','&amp;lt;=', time.strftime('%Y-12-31')),('date','&amp;gt;=',time.strftime('%Y-01-01'))]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;未读消息&quot; name=&quot;message_needaction&quot; domain=&quot;[('message_needaction','=',True)]&quot;/&gt;&#10;            &lt;filter string=&quot;我的活动&quot; name=&quot;activities_my&quot; domain=&quot;[('activity_ids.user_id', '=', uid)]&quot;/&gt;&#10;            &lt;filter string=&quot;逾期工作&quot; name=&quot;activities_overdue&quot; domain=&quot;[('activity_ids.date_deadline', '&amp;lt;', context_today().strftime('%Y-%m-%d'))]&quot;/&gt;&#10;            &lt;filter string=&quot;今天的工作&quot; name=&quot;activities_today&quot;  domain=&quot;[('activity_ids.date_deadline', '=', context_today().strftime('%Y-%m-%d'))]&quot;/&gt;&#10;            &lt;filter string=&quot;未来工作&quot; name=&quot;activities_upcoming_all&quot;  domain=&quot;[('activity_ids.date_deadline', '&amp;gt;', context_today().strftime('%Y-%m-%d'))]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;已归档&quot; name=&quot;active_yes&quot; domain=&quot;[('active','=',False)]&quot;/&gt;&#10;            &lt;filter string=&quot;未归档&quot; name=&quot;active_no&quot; domain=&quot;[('active','=',True)]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;filter string=&quot;待处理&quot; name=&quot;my_pending&quot; domain=&quot;[('state','!=','已完成')]&quot;/&gt;&#10;            &lt;separator/&gt;&#10;            &lt;group expand=&quot;0&quot; string=&quot;分组&quot;&gt;&#10;                &lt;filter string=&quot;创建人&quot; name=&quot;user_id&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'user_id'}&quot;/&gt;&#10;                &lt;filter string=&quot;状态&quot; name=&quot;state&quot; domain=&quot;[]&quot; context=&quot;{'group_by':'state'}&quot;/&gt;&#10;            &lt;/group&gt;&#10;        &lt;/search&gt;&#10;    &lt;/field&gt;&#10;&lt;/record&gt;&#10;" description="标准查询视图" toReformat="false" toShortenFQNames="false">
+    <variable name="fileNameWithoutExtension" expression="fileNameWithoutExtension()" defaultValue="amos_tem" alwaysStopAt="true" />
+    <variable name="clipboard" expression="clipboard()" defaultValue="amos.models" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="HTML" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
