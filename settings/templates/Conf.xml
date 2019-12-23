@@ -883,4 +883,25 @@
       <option name="XML" value="false" />
     </context>
   </template>
+  <template name="searchpanel state" value="&lt;searchpanel&gt;&#10;    &lt;field name=&quot;state&quot; icon=&quot;fa-tasks&quot;/&gt;&#10;    &lt;field name=&quot;account_ids&quot; select=&quot;multi&quot; icon=&quot;fa-share-alt&quot;/&gt;&#10;&lt;/searchpanel&gt;" description="右击菜单" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="Django" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PUPPET_FILE" value="false" />
+      <option name="Python" value="false" />
+      <option name="REQUEST" value="false" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
 </templateSet>
